@@ -210,6 +210,7 @@ ul {
 .other_version a{
   color: #d3d3d3c7;
   outline: none;
+  font-size: 12px;
 }
 .other_version a:hover {
   color: #fff;
