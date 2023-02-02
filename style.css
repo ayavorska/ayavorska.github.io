@@ -124,6 +124,14 @@ ul {
   font-size: 14px;
   margin-bottom: 0;
 }
+.content_text a {
+  outline: none;
+  color: #525252;
+  text-decoration: none;
+}
+.content_text a:hover {
+  text-decoration: underline;
+}
 .content_text li {
   margin-bottom: 15px;
 }
