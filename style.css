@@ -230,4 +230,16 @@ ul {
   margin-right: 0;
 }
 
-
+@media only screen and (max-device-width: 900px) {
+  .my_resume-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .resume_col-left {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .resume_col-right {
+    width: 100%;
+  }
+}
