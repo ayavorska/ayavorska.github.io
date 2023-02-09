@@ -15,7 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #070707;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.4;
   margin-top: 80px;
 }
 img {
@@ -68,7 +68,6 @@ button {
   left: 0;
   z-index: 2;
   width: 100%;
-  padding: 28px;
   background-color: #ffff;
 }
 .header_nav {
@@ -80,7 +79,7 @@ button {
   height: 1px;
   background-color: #828282;
   position: absolute;
-  bottom: -28px;
+  bottom: 0;
 }
 .header_menu {
   display: flex;
@@ -88,16 +87,12 @@ button {
   align-items: center;
   justify-content: center;
 }
-.nav_item {
-  margin-right: 40px;
-}
-.nav_item:last-of-type {
-  margin-right: 0;
-}
 .nav_link {
+  padding: 0 20px;
   outline: none;
   text-decoration: none;
   color: #828282;
+  line-height: 80px;
 }
 .nav_link:hover {
   color: #070707;
@@ -183,6 +178,7 @@ button {
   border-radius: 22px;
   font-size: 18px;
   margin: 60px auto 0;
+  letter-spacing: 0.1em;
   cursor: pointer;
 }
 .contacts_btn:hover {
