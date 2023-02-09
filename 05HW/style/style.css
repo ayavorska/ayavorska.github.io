@@ -68,7 +68,7 @@ button {
   left: 0;
   z-index: 2;
   width: 100%;
-  padding: 27.5px;
+  padding: 28px;
   background-color: #ffff;
 }
 .header_nav {
@@ -80,7 +80,7 @@ button {
   height: 1px;
   background-color: #828282;
   position: absolute;
-  bottom: -27.5px;
+  bottom: -28px;
 }
 .header_menu {
   display: flex;
