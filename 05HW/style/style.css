@@ -93,6 +93,7 @@ button {
   text-decoration: none;
   color: #828282;
   line-height: 80px;
+  letter-spacing: 0.02em;
 }
 .nav_link:hover {
   color: #070707;
