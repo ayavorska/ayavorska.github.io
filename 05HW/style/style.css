@@ -50,14 +50,14 @@ button {
   margin-bottom: 30px;
 }
 .center_text {
-  margin: 0 auto 30px;
+  margin: 0 auto 29px;
   max-width: 50%;
 }
 .bg-gray {
   background: #f6f6f6;
 }
 .margin_bg-gray {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 /* header */
@@ -92,7 +92,7 @@ button {
   outline: none;
   text-decoration: none;
   color: #828282;
-  line-height: 80px;
+  line-height: 86px;
   letter-spacing: 0.02em;
 }
 .nav_link:hover {
