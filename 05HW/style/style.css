@@ -79,7 +79,7 @@ button {
   height: 1px;
   background-color: #828282;
   position: absolute;
-  bottom: 0;
+  bottom: 6px;
 }
 .header_menu {
   display: flex;
@@ -92,7 +92,7 @@ button {
   outline: none;
   text-decoration: none;
   color: #828282;
-  line-height: 86px;
+  line-height: 92px;
   letter-spacing: 0.02em;
 }
 .nav_link:hover {
@@ -106,7 +106,7 @@ button {
   line-height: 65px;
   font-weight: 700;
   padding-top: 16px;
-  margin: 81px 0 50px;
+  margin: 81px 0 47px;
 }
 
 /* skills */
