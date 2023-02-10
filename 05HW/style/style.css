@@ -207,6 +207,11 @@ button {
   margin: 60px auto 30px;
   text-align: center;
 }
+.social_icon-link {
+  color: #828282;
+  outline: none;
+  text-decoration: none;
+}
 @media only screen and (max-device-width: 1024px) {
   .home_title {
     text-align: center;
