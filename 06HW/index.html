@@ -13,17 +13,22 @@
         <legend>Форма реєстрації користувача</legend>
     
         <label for="name">Повне ім'я</label>
-        <input type="text" name="name" id="name" required /> <br />
+        <input type="text" name="name" id="name" required /> <br><br>
     
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required /> <br />
+        <input type="email" name="email" id="email" required /> <br><br>
     
         <label for="password">Пароль</label>
-        <input type="password" name="password" id="password" required /> <br />
+        <input type="password" name="password" id="password" required /> <br><br>
     
         <label for="password">Пароль ще раз</label>
-        <input type="password" name="password" id="password" required /> <br />
-    
+        <input type="password" name="password" id="password" required /> <br><br>
+        
+      </fieldset>
+      <br><br>
+      <fieldset action="#" method="post">
+        <legend>Додаткова інформація</legend>
+          
         <div class="gender">
           <p>Стать</p>
           <input type="radio" id="gender_man" name="gender" value="man" required />
@@ -38,11 +43,11 @@
           />
           <label for="test">жіноча</label>
         </div>
-        <br>
+        <br><br>
     
         <label for="age">Вік</label>
-        <input type="number" id="age" required />
-        <br>
+        <input type="number" id="age" max="120" min="0" required />
+        <br><br>
     
         <div class="course_name">
           <label for="course">Курс</label>
@@ -56,7 +61,7 @@
             <option value="qa-manual">QA Manual</option>
           </select>
         </div>
-        <br>
+        <br><br>
     
         <label for="adress">Повна адреса</label>
         <textarea
@@ -67,11 +72,28 @@
           placeholder="Країна, регіон, місто/селище, вулиця"
           required
         ></textarea>
-        <br>
+        <br><br>
+
+        <label for="file">Загрузити файл</label>
+        <input type="file" name="file" id="file" accept=".png, .zip" required /> 
+        <br><br>
+
+        <label for="date">Дата</label>
+        <input type="date" name="date" id="date" value="2023-02-11" required /> 
+        <br><br>
+
+        <label for="color">Колір</label>
+        <input type="color" name="color" id="color" required /> 
+        <br><br>
+
+        <label for="range">Діапазон</label>
+        <input type="range" name="range" id="range" required /> 
+        <br><br>
     
         <input type="checkbox" id="terms" name="terms" required />
         <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
-    
+        <br><br>
+
         <div class="button">
             <button class="clean_btn" type="reset">Очистити форму</button>
             <button class="register_btn">Зареєструватися</button>
