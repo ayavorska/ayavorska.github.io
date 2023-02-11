@@ -8,21 +8,21 @@
     <title>HW06</title>
 </head>
 <body>
-    <form>
+    <form action="#" method="post">
       <fieldset>
         <legend>Форма реєстрації користувача</legend>
     
         <label for="name">Повне ім'я</label>
-        <input type="text" id="name" required /> <br />
+        <input type="text" name="name" id="name" required /> <br />
     
         <label for="email">Email</label>
-        <input type="email" id="email" required /> <br />
+        <input type="email" name="email" id="email" required /> <br />
     
         <label for="password">Пароль</label>
-        <input type="password" id="password" required /> <br />
+        <input type="password" name="password" id="password" required /> <br />
     
         <label for="password">Пароль ще раз</label>
-        <input type="password" id="password" required /> <br />
+        <input type="password" name="password" id="password" required /> <br />
     
         <div class="gender">
           <p>Стать</p>
@@ -72,7 +72,7 @@
         <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
     
         <div class="button">
-            <button class="clean_btn">Очистити форму</button>
+            <button class="clean_btn" type="reset">Очистити форму</button>
             <button class="register_btn">Зареєструватися</button>
         </div>
       </fieldset>
