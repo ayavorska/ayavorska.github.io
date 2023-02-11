@@ -1,0 +1,36 @@
+fieldset {
+    width: 50%;
+    background: #eeeeee;
+    border: 2px solid #eeeeee;
+    padding: 20px;
+    margin: 20px;
+}
+p {
+    margin: 0;
+}
+legend {
+    font-size: 18px;
+    font-weight: 700;
+}
+.form_row {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+}
+.form_row label {
+    width: 50%;
+}
+.radio_inputs {
+    display: flex;
+    flex-direction: row;
+}
+.terms_row {
+    margin: 20px 0 5px;
+}
+.buttons {
+    margin-left: 20px;
+}
+.form_btn {
+    margin-right: 15px;
+    padding: 10px 5px;
+}
