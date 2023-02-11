@@ -11,52 +11,63 @@
     <form action="#" method="post">
       <fieldset>
         <legend>Форма реєстрації користувача</legend>
+        <div class="form_row">
+          <label for="name">Повне ім'я</label>
+          <input type="text" name="name" id="name" required />
+        </div>
 
-        <label for="name">Повне ім'я</label>
-        <input type="text" name="name" id="name" required /> <br /><br />
+        <div class="form_row">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required /> <br /><br />
+        <div class="form_row">
+          <label for="password">Пароль</label>
+          <input type="password" name="password" id="password" required />
+        </div>
 
-        <label for="password">Пароль</label>
-        <input type="password" name="password" id="password" required />
-        <br /><br />
-
-        <label for="password">Пароль ще раз</label>
-        <input type="password" name="password" id="password" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="password">Пароль ще раз</label>
+          <input type="password" name="password" id="password" required />
+        </div>
       </fieldset>
-      <br /><br />
+
       <fieldset action="#" method="post">
         <legend>Додаткова інформація</legend>
 
-        <div class="gender">
+        <div class="gender form_row">
           <p>Стать</p>
-          <input
-            type="radio"
-            id="gender_man"
-            name="gender"
-            value="man"
-            required
-          />
-          <label for="test">чоловіча</label>
-          <input
-            type="radio"
-            id="gender_woman"
-            name="gender"
-            value="woman"
-            required
-            checked
-          />
-          <label for="test">жіноча</label>
+          <div class="radio_inputs">
+            <div class="radio_input">
+              <input
+                type="radio"
+                id="gender_man"
+                name="gender"
+                value="man"
+                required
+              />
+              <label for="test">чоловіча</label>
+            </div>
+            <div class="radio_input">
+              <input
+                type="radio"
+                id="gender_woman"
+                name="gender"
+                value="woman"
+                required
+                checked
+              />
+              <label for="test">жіноча</label>
+            </div>
+          </div>
         </div>
-        <br /><br />
 
-        <label for="age">Вік</label>
-        <input type="number" id="age" max="120" min="0" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="age">Вік</label>
+          <input type="number" id="age" max="120" min="0" required />
+        </div>
 
-        <div class="course_name">
+        <div class="course_name form_row">
           <label for="course">Курс</label>
           <select id="course" name="course">
             <option disabled="disabled" selected="selected" required>
@@ -68,44 +79,62 @@
             <option value="qa-manual">QA Manual</option>
           </select>
         </div>
-        <br /><br />
 
-        <label for="adress">Повна адреса</label>
-        <textarea
-          name="adress"
-          id="adress"
-          cols="20"
-          rows="5"
-          placeholder="Країна, регіон, місто/селище, вулиця"
-          required
-        ></textarea>
-        <br /><br />
+        <div class="form_row">
+          <label for="adress">Повна адреса</label>
+          <textarea
+            name="adress"
+            id="adress"
+            cols="20"
+            rows="5"
+            placeholder="Країна, регіон, місто/селище, вулиця"
+            required
+          ></textarea>
+        </div>
 
-        <label for="file">Загрузити файл</label>
-        <input type="file" name="file" id="file" accept=".png, .zip" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="file">Загрузити файл</label>
+          <input
+            type="file"
+            name="file"
+            id="file"
+            accept=".png, .zip"
+            required
+          />
+        </div>
 
-        <label for="date">Дата</label>
-        <input type="date" name="date" id="date" value="2023-02-11" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="date">Дата</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            value="2023-02-11"
+            required
+          />
+        </div>
 
-        <label for="color">Колір</label>
-        <input type="color" name="color" id="color" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="color">Колір</label>
+          <input type="color" name="color" id="color" required />
+        </div>
 
-        <label for="range">Діапазон</label>
-        <input type="range" name="range" id="range" required />
-        <br /><br />
+        <div class="form_row">
+          <label for="range">Діапазон</label>
+          <input type="range" name="range" id="range" required />
+        </div>
 
-        <input type="checkbox" id="terms" name="terms" required />
-        <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
-        <br /><br />
-
-        <div class="button">
-          <button class="clean_btn" type="reset">Очистити форму</button>
-          <button class="register_btn">Зареєструватися</button>
+        <div class="terms_row">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
         </div>
       </fieldset>
+
+
+      <div class="buttons form_row">
+        <button class="form_btn clean_btn" type="reset">Очистити форму</button>
+        <button class="form_btn register_btn">Зареєструватися</button>
+      </div>
     </form>
   </body>
 </html>
