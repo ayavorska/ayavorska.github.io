@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>HW06</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="#" method="post">
       <fieldset>
         <legend>Форма реєстрації користувача</legend>
-    
+
         <label for="name">Повне ім'я</label>
-        <input type="text" name="name" id="name" required /> <br><br>
-    
+        <input type="text" name="name" id="name" required /> <br /><br />
+
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required /> <br><br>
-    
+        <input type="email" name="email" id="email" required /> <br /><br />
+
         <label for="password">Пароль</label>
-        <input type="password" name="password" id="password" required /> <br><br>
-    
+        <input type="password" name="password" id="password" required />
+        <br /><br />
+
         <label for="password">Пароль ще раз</label>
-        <input type="password" name="password" id="password" required /> <br><br>
-        
+        <input type="password" name="password" id="password" required />
+        <br /><br />
       </fieldset>
-      <br><br>
+      <br /><br />
       <fieldset action="#" method="post">
         <legend>Додаткова інформація</legend>
-          
+
         <div class="gender">
           <p>Стать</p>
-          <input type="radio" id="gender_man" name="gender" value="man" required />
+          <input
+            type="radio"
+            id="gender_man"
+            name="gender"
+            value="man"
+            required
+          />
           <label for="test">чоловіча</label>
           <input
             type="radio"
@@ -43,12 +50,12 @@
           />
           <label for="test">жіноча</label>
         </div>
-        <br><br>
-    
+        <br /><br />
+
         <label for="age">Вік</label>
         <input type="number" id="age" max="120" min="0" required />
-        <br><br>
-    
+        <br /><br />
+
         <div class="course_name">
           <label for="course">Курс</label>
           <select id="course" name="course">
@@ -61,8 +68,8 @@
             <option value="qa-manual">QA Manual</option>
           </select>
         </div>
-        <br><br>
-    
+        <br /><br />
+
         <label for="adress">Повна адреса</label>
         <textarea
           name="adress"
@@ -72,33 +79,33 @@
           placeholder="Країна, регіон, місто/селище, вулиця"
           required
         ></textarea>
-        <br><br>
+        <br /><br />
 
         <label for="file">Загрузити файл</label>
-        <input type="file" name="file" id="file" accept=".png, .zip" required /> 
-        <br><br>
+        <input type="file" name="file" id="file" accept=".png, .zip" required />
+        <br /><br />
 
         <label for="date">Дата</label>
-        <input type="date" name="date" id="date" value="2023-02-11" required /> 
-        <br><br>
+        <input type="date" name="date" id="date" value="2023-02-11" required />
+        <br /><br />
 
         <label for="color">Колір</label>
-        <input type="color" name="color" id="color" required /> 
-        <br><br>
+        <input type="color" name="color" id="color" required />
+        <br /><br />
 
         <label for="range">Діапазон</label>
-        <input type="range" name="range" id="range" required /> 
-        <br><br>
-    
+        <input type="range" name="range" id="range" required />
+        <br /><br />
+
         <input type="checkbox" id="terms" name="terms" required />
         <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
-        <br><br>
+        <br /><br />
 
         <div class="button">
-            <button class="clean_btn" type="reset">Очистити форму</button>
-            <button class="register_btn">Зареєструватися</button>
+          <button class="clean_btn" type="reset">Очистити форму</button>
+          <button class="register_btn">Зареєструватися</button>
         </div>
       </fieldset>
-    </form>    
-</body>
+    </form>
+  </body>
 </html>
