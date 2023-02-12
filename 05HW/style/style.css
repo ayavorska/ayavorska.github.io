@@ -148,7 +148,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-.star {
+.star:not(:last-of-type) {
   margin-right: 10px;
 }
 .star_icon {
@@ -159,9 +159,6 @@ button {
 }
 .star.active .star_icon {
   background-image: url(../images/skills_icon/star_black.svg);
-}
-.stars:last-of-type {
-  margin-right: 0;
 }
 
 /* portfolio */
