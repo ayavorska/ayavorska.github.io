@@ -30,6 +30,9 @@ ul {
 button {
   display: block;
 }
+.main {
+  margin-top: 80px;
+}
 .container {
   width: 100%;
   max-width: 970px;
@@ -101,12 +104,15 @@ button {
 
 /* home */
 
+.home_inner {
+  padding-top: 11px;
+}
+
 .home_title {
   font-size: 48px;
   line-height: 65px;
   font-weight: 700;
-  padding-top: 16px;
-  margin: 75px 0 47px;
+  margin: 0 0 47px;
 }
 
 /* skills */
@@ -142,10 +148,17 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-.stars {
+.star {
+  margin-right: 10px;
+}
+.star_icon {
+  display: block;
   width: 26px;
   height: 26px;
-  margin-right: 10px;
+  background-image: url(../images/skills_icon/star.svg);
+}
+.star.active .star_icon {
+  background-image: url(../images/skills_icon/star_black.svg);
 }
 .stars:last-of-type {
   margin-right: 0;
@@ -154,16 +167,19 @@ button {
 /* portfolio */
 
 .portfolio_page {
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 .portfolio_page:last-of-type {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-.page_link {
-  color: #070707;
+.portfolio_name {
   text-align: center;
   margin-top: 40px;
   display: block;
+
+}
+.page_link {
+  color: #070707;
   outline: none;
 }
 
