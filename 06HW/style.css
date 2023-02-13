@@ -17,7 +17,7 @@ legend {
     flex-direction: row;
     margin: 5px 0;
 }
-.form_row label {
+.label {
     width: 50%;
 }
 .radio_inputs {
