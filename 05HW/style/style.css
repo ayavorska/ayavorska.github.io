@@ -194,6 +194,7 @@ button {
   margin: 54px auto 0;
   letter-spacing: 0.1em;
   cursor: pointer;
+  transition: all .5s;
 }
 .contacts_btn:hover {
   background-color: #fff;
