@@ -201,6 +201,9 @@ button {
 .social_icon:not(:last-of-type) {
   margin-right: 50px;
 }
+.social_icon a {
+  display: inline-block;
+}
 .social_icon img {
   width: 40px;
   height: 40px;
