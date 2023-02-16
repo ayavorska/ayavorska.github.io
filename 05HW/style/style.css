@@ -222,11 +222,11 @@ button {
     text-align: center;
     margin-top: 110px;
   }
-  .product_list {
+  .skill_list {
     display: flex;
     flex-direction: column;
   }
-  .product_skills:not(:last-of-type) {
+  .product_skill:not(:last-of-type) {
     margin-bottom: 30px;
   }
 }
