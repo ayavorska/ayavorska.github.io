@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #2F281E;
+    font-size: 16px;
+
+}
+
+/* heder */
+
+.nav_link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 80px;
+    color: #2F281E;
+}
+.header_btn {
+    font-size: 16px;
+    line-height: 19.5px;
+    padding: 13px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+/* home */
+
+.home {
+    padding: 70px 0 50px;
+}
