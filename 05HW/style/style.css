@@ -1,10 +1,3 @@
-*,
-*::before,
-*:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 html,
 body {
   width: 100%;
@@ -18,17 +11,9 @@ body {
   line-height: 25px;
   margin-top: 80px;
 }
-img {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
 ul {
   padding: 0;
   list-style: none;
-}
-button {
-  display: block;
 }
 .main {
   margin-top: 80px;
@@ -40,6 +25,11 @@ button {
 }
 .section_inner {
   padding: 100px 0 70px 0;
+}
+.img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .main_subtitle {
   font-size: 34px;
@@ -187,6 +177,7 @@ button {
   color: #ffff;
   background-color: #070707;
   font-family: "Open Sans", sans-serif;
+  display: block;
   line-height: 24px;
   font-weight: 700;
   border-radius: 22px;
