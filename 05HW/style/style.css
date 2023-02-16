@@ -40,9 +40,6 @@ ul {
 }
 .main_text {
   text-align: center;
-  margin-bottom: 30px;
-}
-.center_text {
   margin: 0 auto 29px;
   max-width: 50%;
 }
