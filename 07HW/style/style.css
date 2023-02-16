@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: all .2s ease-in;
+  transition: all .1s ease-in;
 }
 html,
 body {
@@ -68,9 +68,12 @@ label div:after {
   width: 100%;
   height: 45px;
   background-color: #88839e;
-  padding: 12px 12px 14px;
   border-top: 3px solid #88839e;
   border-bottom: 3px solid #88839e;
+
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 .item:nth-child(2n) {
   background-color: #7a7593;
@@ -82,42 +85,51 @@ label div:after {
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
-.item_container {
-  position: relative;
-  padding-left: 31px;
-  cursor: pointer;
-  user-select: none;
+.item:active {
+  background: #da5858;
 }
-.item_container input {
+.item input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
+.item_container {
+  width: 100%;
+  height: 100%;
+  padding: 12px 44px 14px;
+  display: block;
+}
+.item_container div {
+  position: relative;
+  top: -2px;
+}
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 12px;
+  left: 12px;
   height: 19px;
   width: 19px;
   background-color: #fff;
 }
-.item_container:hover input ~ .checkmark {
+.item:hover input ~ .item_container .checkmark {
   background-color: #ccc;
 }
-.item_container input:checked ~ .checkmark {
+.item input:checked ~ .item_container .checkmark {
   background-color: #fff;
+}
+.item input:checked + .item_container,
+.item input:checked + .item_container div {
+  text-decoration: line-through;
 }
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.item_container input:checked ~ .checkmark:after {
+.item .item_container .checkmark:after {
   display: block;
-}
-.item_container .checkmark:after {
   left: 6px;
   top: 3px;
   width: 8px;
@@ -125,6 +137,10 @@ label div:after {
   border: solid #000;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+  visibility: hidden;
+}
+.item input:checked ~ .item_container .checkmark:after {
+  visibility: visible;
 }
 
 /* button */
