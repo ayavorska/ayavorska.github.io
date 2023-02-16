@@ -104,19 +104,19 @@ ul {
 
 /* skills */
 
-.product_list {
+.skill_list {
   padding: 20px 0 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.product_skills {
+.product_skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.skills_img {
+.skill_img {
   width: 80px;
   height: 80px;
 }
