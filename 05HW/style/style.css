@@ -27,7 +27,7 @@ button {
   margin: 0 auto;
 }
 .section_inner {
-  padding: 100px 0 70px 0;
+  padding: 100px 0;
 }
 .img {
   display: block;
@@ -45,6 +45,9 @@ button {
   text-align: center;
   margin: 0 auto 29px;
   max-width: 50%;
+}
+.main_text:nth-of-type(3) {
+  margin-bottom: 0;
 }
 .bg-gray {
   background: #f6f6f6;
@@ -108,7 +111,7 @@ button {
 /* skills */
 
 .skill_list {
-  padding: 20px 0 30px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -122,13 +125,14 @@ button {
 .skill_img {
   width: 80px;
   height: 80px;
+  margin-bottom: 25px;
 }
 .product_name {
   font-size: 14px;
   line-height: 19px;
   font-weight: 700;
   color: #828282;
-  margin: 25px 0 60px;
+  margin-bottom: 60px;
   max-width: 60%;
   min-height: 38px;
   text-align: center;
@@ -157,13 +161,14 @@ button {
   margin-bottom: 70px;
 }
 .portfolio_page:last-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 0;
+}
+.portfolio_img {
+  margin-bottom: 40px;
 }
 .portfolio_name {
   text-align: center;
-  margin-top: 40px;
   display: block;
-
 }
 .page_link {
   color: #070707;
