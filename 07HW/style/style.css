@@ -68,7 +68,7 @@ label div:after {
   width: 100%;
   height: 45px;
   background-color: #88839e;
-  padding: 12px;
+  padding: 12px 12px 14px;
   border-top: 3px solid #88839e;
   border-bottom: 3px solid #88839e;
 }
