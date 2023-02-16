@@ -182,7 +182,7 @@ button {
   font-weight: 700;
   border-radius: 22px;
   font-size: 18px;
-  margin: 54px auto 0;
+  margin: 56px auto 0;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: all .5s;
@@ -212,7 +212,7 @@ button {
   font-size: 14px;
   color: #828282;
   line-height: 19px;
-  margin: 56px auto 30px;
+  margin: 54px auto 30px;
   text-align: center;
 }
 .social_icon-link {
