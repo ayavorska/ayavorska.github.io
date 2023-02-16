@@ -15,6 +15,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+button {
+  box-shadow: none;
+}
 .main {
   margin-top: 80px;
 }
@@ -206,7 +209,7 @@ ul {
   font-size: 14px;
   color: #828282;
   line-height: 19px;
-  margin: 54px auto 30px;
+  margin: 56px auto 30px;
   text-align: center;
 }
 .social_icon-link {
