@@ -12,6 +12,7 @@ ul {
   list-style: none;
 }
 button {
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     border: none;
 }
@@ -21,7 +22,21 @@ button {
     margin: 0 auto;
     color: #2F281E;
     font-size: 16px;
-
+    font-weight: 500;
+}
+.orange_btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 40px;
+    background-color: #FF9900;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #FF9900;
+    border-radius: 4px;
+}
+.orange_btn:hover {
+    background-color: transparent;
+    color: #2F281E;
 }
 
 /* heder */
@@ -38,7 +53,26 @@ button {
     padding: 13px 25px;
     background-color: #fff;
     border-radius: 4px;
+    color: #2F281E;
+    font-weight: 600;
 }
+.singin_btn {
+    border: 1px solid #BCD0E5;
+}
+.singin_btn:hover {
+    background-color: #BCD0E5;
+    color: #fff;
+}
+.singup_btn {
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    color: #fff;
+}
+.singup_btn:hover {
+    background-color: transparent;
+    color: #2F281E;
+}
+
 
 
 /* home */
