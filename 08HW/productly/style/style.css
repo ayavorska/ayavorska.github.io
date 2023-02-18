@@ -64,7 +64,7 @@ button {
 }
 .header_nav {
   display: inline-block;
-  margin: 0 171px 0 376px;
+  margin: 2px 171px 0 396px;
 }
 .nav_item {
   display: inline-block;
@@ -74,7 +74,7 @@ button {
   text-decoration: none;
   line-height: 80px;
   color: #2f281e;
-  padding: 0 10px;
+  padding: 0 9px;
 }
 .nav_link:hover {
   color: #ff9900;
@@ -85,17 +85,17 @@ button {
 .header_btn {
   font-size: 16px;
   line-height: 19.5px;
-  padding: 13px 25px;
+  padding: 12px 23px;
   background-color: #fff;
   border-radius: 4px;
   color: #2f281e;
   font-weight: 600;
 }
-.singin_btn {
+.signin_btn {
   border: 1px solid #bcd0e5;
   margin-right: 30px;
 }
-.singin_btn:hover {
+.signin_btn:hover {
   background-color: #bcd0e5;
   color: #fff;
 }
