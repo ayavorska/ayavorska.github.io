@@ -64,7 +64,7 @@ button {
 }
 .header_nav {
   display: inline-block;
-  margin: 2px 180px 0 388px;
+  margin: 2px 188px 0 388px;
 }
 .nav_item {
   display: inline-block;
@@ -74,7 +74,7 @@ button {
   text-decoration: none;
   line-height: 80px;
   color: #2f281e;
-  padding: 0 9px;
+  padding: 0 8px;
 }
 .nav_link:hover {
   color: #ff9900;
