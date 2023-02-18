@@ -53,12 +53,18 @@ button {
   width: 100%;
   background-color: #ffff;
 }
+.header_inner {
+    position: relative;
+}
 .header_logo {
   display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 25px;
 }
 .header_nav {
   display: inline-block;
-  margin: 0 171px;
+  margin: 0 171px 0 376px;
 }
 .nav_item {
   display: inline-block;
