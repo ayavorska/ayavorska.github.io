@@ -31,7 +31,7 @@ button {
 .orange_btn {
   font-size: 16px;
   line-height: 24px;
-  padding: 13px 40px;
+  padding: 13px 42px;
   background-color: #ff9900;
   color: #fff;
   font-weight: 700;
@@ -54,7 +54,7 @@ button {
   background-color: #ffff;
 }
 .header_inner {
-    position: relative;
+  position: relative;
 }
 .header_logo {
   display: inline-block;
@@ -112,38 +112,38 @@ button {
 /* home */
 
 .home {
-  padding: 180px 0 50px;
+  padding: 154px 0 50px;
 }
 .home_inner {
-    position: relative;
+  position: relative;
 }
 .home_side {
-    width: 47%;
-    display: inline-block;
+  width: 47%;
+  display: inline-block;
 }
 .home_side:not(:last-of-type) {
-    margin-right: 56px;
+  margin-right: 56px;
 }
 .home_side-left {
-    position: absolute;
-    left: 0;
-    top: 78px;
+  position: absolute;
+  left: 0;
+  top: 92px;
 }
 .home_side-right {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 .home_title {
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .home_text {
-    font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 26px;
 }
 .home_img {
   width: 100%;
