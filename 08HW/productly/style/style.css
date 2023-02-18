@@ -6,77 +6,141 @@
   box-sizing: border-box;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #2f281e;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
 }
 ul {
   list-style: none;
 }
 button {
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  border: none;
 }
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: #2F281E;
-    font-size: 16px;
-    font-weight: 500;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #2f281e;
+  font-size: 16px;
+  font-weight: 500;
 }
 .orange_btn {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 13px 40px;
-    background-color: #FF9900;
-    color: #fff;
-    font-weight: 700;
-    border: 1px solid #FF9900;
-    border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px 40px;
+  background-color: #ff9900;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #ff9900;
+  border-radius: 4px;
 }
 .orange_btn:hover {
-    background-color: transparent;
-    color: #2F281E;
+  background-color: transparent;
+  color: #2f281e;
 }
 
-/* heder */
+/* header */
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffff;
+}
+.header_logo {
+  display: inline-block;
+}
+.header_nav {
+  display: inline-block;
+  margin: 0 171px;
+}
+.nav_item {
+  display: inline-block;
+}
 .nav_link {
-    display: inline-block;
-    text-decoration: none;
-    line-height: 80px;
-    color: #2F281E;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 80px;
+  color: #2f281e;
+  padding: 0 10px;
+}
+.nav_link:hover {
+  color: #ff9900;
+}
+.authorization_btn {
+  display: inline-block;
 }
 .header_btn {
-    font-size: 16px;
-    line-height: 19.5px;
-    padding: 13px 25px;
-    background-color: #fff;
-    border-radius: 4px;
-    color: #2F281E;
-    font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  padding: 13px 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #2f281e;
+  font-weight: 600;
 }
 .singin_btn {
-    border: 1px solid #BCD0E5;
+  border: 1px solid #bcd0e5;
+  margin-right: 30px;
 }
 .singin_btn:hover {
-    background-color: #BCD0E5;
-    color: #fff;
+  background-color: #bcd0e5;
+  color: #fff;
 }
 .singup_btn {
-    border: 1px solid #FF9900;
-    background-color: #FF9900;
-    color: #fff;
+  border: 1px solid #ff9900;
+  background-color: #ff9900;
+  color: #fff;
 }
 .singup_btn:hover {
-    background-color: transparent;
-    color: #2F281E;
+  background-color: transparent;
+  color: #2f281e;
 }
-
-
 
 /* home */
 
 .home {
-    padding: 70px 0 50px;
+  padding: 180px 0 50px;
+}
+.home_inner {
+    position: relative;
+}
+.home_side {
+    width: 47%;
+    display: inline-block;
+}
+.home_side:not(:last-of-type) {
+    margin-right: 56px;
+}
+.home_side-left {
+    position: absolute;
+    left: 0;
+    top: 78px;
+}
+.home_side-right {
+    position: absolute;
+    right: 0;
+}
+.home_title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  margin-bottom: 30px;
+}
+.home_text {
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+margin-bottom: 20px;
+}
+.home_img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
