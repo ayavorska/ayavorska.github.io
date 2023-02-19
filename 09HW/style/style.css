@@ -31,6 +31,12 @@ button {
 /* Header */
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffff;
   padding: 10px 0;
   border-bottom: 1px solid #bdbdbd;
 }
@@ -40,7 +46,7 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.header_menu {
+.main_menu {
   display: flex;
   flex-direction: row;
 }
@@ -76,7 +82,7 @@ button {
 /* about */
 
 .about {
-  padding: 150px 0;
+  padding: 230px 0 150px;
   background-color: #f6f6f6;
 }
 .about_inner {
@@ -138,6 +144,9 @@ button {
   display: block;
   width: 42px;
   height: 42px;
+  border: 1px solid #18b5dc;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .team_item-link:not(:last-of-type) {
   margin-right: 4px;
@@ -145,21 +154,43 @@ button {
 .social_icon--bg-blue {
   background-color: #5dcbe6;
 }
+
+/* social icon white */
+
 .social_icon--twitter {
   background-image: url(../images/icons/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .social_icon--facebook {
   background-image: url(../images/icons/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .social_icon--instagram {
   background-image: url(../images/icons/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
+.social_icon--linkein {
+  background-image: url(../images/icons/linkedin.svg);
+}
+.social_icon--telegram {
+  background-image: url(../images/icons/telegram.svg);
+}
+
+/* social icon blue */
+
+.social_icon--twitter-blue {
+  background-image: url(../images/icons/twitter_blue.svg);
+}
+.social_icon--facebook-blue {
+  background-image: url(../images/icons/facebook_blue.svg);
+}
+.social_icon--instagram-blue {
+  background-image: url(../images/icons/instagram_blue.svg);
+}
+.social_icon--linkein-blue {
+  background-image: url(../images/icons/linkedin_blue.svg);
+}
+.social_icon--telegram-blue {
+  background-image: url(../images/icons/twitter_blue.svg);
+}
+
 .team_item-description {
   font-size: 18px;
   line-height: 22px;
@@ -169,4 +200,29 @@ button {
 }
 .team_item-position {
   font-weight: 300;
+}
+
+/* footer */
+
+.footer {
+  padding: 40px 0;
+}
+.footer_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_logo {
+  margin-bottom: 28px;
+}
+.footer_nav {
+  margin-bottom: 28px;
+}
+.nav_link--footer {
+  font-size: 18px;
+  line-height: 22px;
+}
+.footer-social_icons {
+  display: flex;
+  flex-direction: row;
 }
