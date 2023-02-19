@@ -37,6 +37,7 @@ button {
   font-weight: 700;
   border: 1px solid #ff9900;
   border-radius: 4px;
+  transition: all .25s;
 }
 .orange_btn:hover {
   background-color: transparent;
@@ -90,6 +91,7 @@ button {
   border-radius: 4px;
   color: #2f281e;
   font-weight: 600;
+  transition: all .25s;
 }
 .signin_btn {
   border: 1px solid #bcd0e5;
