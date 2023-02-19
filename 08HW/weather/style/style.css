@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Lucida Sans Unicode";
+  src: url("../fonts/LucidaSansUnicode.woff2") format("woff2"),
+    url("../fonts/LucidaSansUnicode.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Lucida Sans Unicode";
+  background-color: #3399cc;
+  border: 25px solid #2b81ac;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+.weather_content .wi {
+  font-size: 42px;
+  max-height: 42px;
+}
+.weather {
+  padding: 40px 0 95px;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.weather_title {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+.weather_inner {
+  width: 100%;
+  border: 2px solid #ffffff;
+  margin-bottom: 36px;
+  transition: all 0.25s ease-in;
+}
+.weather_inner:hover {
+  background-color: #ffffff2d;
+}
+.weather_row {
+  display: inline-block;
+  width: 100%;
+}
+.weather_content {
+  border: 2px solid #ffffff;
+  display: inline-block;
+  padding: 26px 0 27px;
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+.weather_content:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.25s ease-in;
+}
+.weather_inner:hover .weather_content:after {
+  opacity: 0.5;
+}
+.weather_inner:hover .weather_content:hover:after {
+  opacity: 1;
+}
+.weather_content:hover {
+  cursor: url(../images/cursor.png), auto;
+}
+.weather_content--lisbon:after {
+  background-color: #2065cc;
+}
+.weather_content--paris:after {
+  background-color: #33cccc;
+}
+.weather_content--belgrade:after {
+  background-color: #996699;
+}
+.weather_content--venice:after {
+  background-color: #c24747;
+}
+.weather_content--tel-avive:after {
+  background-color: #e2674a;
+}
+.weather_content--cair:after {
+  background-color: #ffcc66;
+}
+.weather_content--new-york:after {
+  background-color: #99cc99;
+}
+.weather_content--new-delhi:after {
+  background-color: #669999;
+}
+.weather_content--san-francisco:after {
+  background-color: #cc6699;
+}
+.weather_content--tokyo:after {
+  background-color: #339966;
+}
+.weather_content--sydney:after {
+  background-color: #666699;
+}
+.weather_content--width-2 {
+  width: 50%;
+}
+.weather_content--width-4 {
+  width: 100%;
+}
+.city_name {
+  margin-bottom: 10px;
+}
+.weather_temperature {
+  display: inline-block;
+  opacity: 70%;
+}
+.city_name,
+.weather_temperature {
+  position: relative;
+  z-index: 1;
+}
+.temperature {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.weather_text {
+  font-size: 16px;
+  line-height: 19px;
+}
