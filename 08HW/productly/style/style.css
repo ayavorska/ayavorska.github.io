@@ -29,21 +29,37 @@ button {
   font-size: 16px;
   font-weight: 500;
 }
-.orange_btn {
+.btn {
   font-size: 16px;
-  line-height: 24px;
-  padding: 13px 42px;
+  font-weight: 700;
   background-color: #ff9900;
   color: #fff;
-  font-weight: 700;
   border: 1px solid #ff9900;
   border-radius: 4px;
   transition: all .25s;
+  padding: 13px 42px;
+  line-height: 24px;
 }
-.orange_btn:hover {
+.btn:hover {
   background-color: transparent;
   color: #2f281e;
 }
+.btn--white {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #2f281e;
+  border: 1px solid #bcd0e5;
+  margin-right: 30px;
+}
+.btn--white:hover {
+  background-color: #bcd0e5;
+  color: #fff;
+}
+.btn--white, .btn--accent {
+  padding: 12px 23px;
+  line-height: 20px;
+}
+
 
 /* header */
 
@@ -55,100 +71,74 @@ button {
   width: 100%;
   background-color: #ffff;
 }
-.header_inner {
+.header__inner {
   position: relative;
 }
-.header_logo {
+.header__logo {
   display: inline-block;
   position: absolute;
   left: 0;
   top: 25px;
 }
-.header_nav {
+.header__nav {
   display: inline-block;
-  margin: 2px 188px 0 388px;
+  margin: 2px 186px 0 388px;
 }
-.nav_item {
+.nav__item {
   display: inline-block;
 }
-.nav_link {
+.nav__link {
   display: inline-block;
   text-decoration: none;
   line-height: 80px;
   color: #2f281e;
   padding: 0 8px;
 }
-.nav_link:hover {
+.nav__link:hover {
   color: #ff9900;
 }
-.authorization_btn {
+.authorization__btn {
   display: inline-block;
 }
-.header_btn {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 12px 23px;
-  background-color: #fff;
-  border-radius: 4px;
-  color: #2f281e;
-  font-weight: 600;
-  transition: all .25s;
-}
-.signin_btn {
-  border: 1px solid #bcd0e5;
-  margin-right: 30px;
-}
-.signin_btn:hover {
-  background-color: #bcd0e5;
-  color: #fff;
-}
-.singup_btn {
-  border: 1px solid #ff9900;
-  background-color: #ff9900;
-  color: #fff;
-}
-.singup_btn:hover {
-  background-color: transparent;
-  color: #2f281e;
-}
+
 
 /* home */
 
 .home {
   padding: 154px 0 50px;
 }
-.home_inner {
+.home__inner {
   position: relative;
 }
-.home_side {
+.home__side {
   width: 47%;
   display: inline-block;
 }
-.home_side:not(:last-of-type) {
+.home__side:not(:last-of-type) {
   margin-right: 56px;
 }
-.home_side-left {
+.home__side-left {
   position: absolute;
   left: 0;
   top: 94px;
 }
-.home_side-right {
+.home__side-right {
   position: absolute;
   right: 0;
 }
-.home_title {
+.home__title {
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
   margin-bottom: 32px;
 }
-.home_text {
+.home__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 26px;
 }
-.home_img {
+.home__img {
   width: 100%;
   height: 100%;
   display: block;
