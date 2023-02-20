@@ -131,6 +131,7 @@ button {
 }
 
 .team__item-photo {
+  display: block;
   height: auto;
   max-width: 100%;
   object-fit: cover;
