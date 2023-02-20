@@ -156,7 +156,7 @@ button {
     rgba(255, 244, 229, 0.0001) 99.67%
   );
   transform: rotate(180deg);
-  border-bottom: 1px solid #FFE5D2A0;
+  border-bottom: 1px solid #fff;
   border-radius: 50%;
 }
 .product__inner {
