@@ -172,7 +172,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 62px;
 }
 .product__content-card:not(:last-of-type) {
   margin-right: 40px;
@@ -188,4 +188,7 @@ button {
 }
 .product__btn {
   margin-bottom: 25px;
+}
+.product__btn .btn {
+  padding: 13px 39.5px;
 }
