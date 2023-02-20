@@ -58,8 +58,11 @@ button {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  padding: 0 15px;
+  margin-right: 30px;
   transition: all 0.25s;
+}
+.nav__link:not(:last-of-type) {
+  margin-right: 0;
 }
 .nav__link:hover {
   color: #18b5dc;
