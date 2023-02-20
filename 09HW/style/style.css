@@ -100,7 +100,7 @@ button {
   line-height: 41px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  margin-bottom: 54px;
+  margin-bottom: 57px;
   position: relative;
 }
 .about__title:after {
@@ -115,7 +115,7 @@ button {
 .about__text {
   text-align: center;
   font-weight: 300;
-  margin-bottom: 57px;
+  margin-bottom: 54px;
 }
 .section__team {
   display: flex;
@@ -273,7 +273,7 @@ button {
   margin-bottom: 22px;
 }
 .footer__nav {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 .nav__item--footer:not(:last-of-type) {
   margin-right: 22px;
