@@ -174,11 +174,14 @@ button {
   justify-content: space-between;
   margin-bottom: 62px;
 }
+.product__content-card {
+  width: 25%;
+}
 .product__content-card:not(:last-of-type) {
   margin-right: 40px;
 }
 .product__icon {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .product__text {
   font-weight: 600;
