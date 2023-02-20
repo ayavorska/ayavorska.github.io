@@ -50,6 +50,9 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+.nav__item:not(:last-of-type) {
+  margin-right: 32px;
+}
 .nav__link {
   text-transform: uppercase;
   text-decoration: none;
@@ -57,11 +60,8 @@ button {
   font-weight: 600;
   font-size: 20px;
   line-height: 79px;
-  margin-right: 32px;
+  
   transition: all 0.25s;
-}
-.nav__link:not(:last-of-type) {
-  margin-right: 0;
 }
 .nav__link:hover {
   color: #18b5dc;
@@ -275,12 +275,12 @@ button {
 .footer__nav {
   margin-bottom: 28px;
 }
+.nav__item--footer:not(:last-of-type) {
+  margin-right: 22px;
+}
 .nav__link--footer {
   font-size: 18px;
   line-height: 22px;
-}
-.nav__link--footer:not(:last-of-type) {
-  margin-right: 22px;
 }
 
 /* icons */
