@@ -126,33 +126,55 @@ button {
 .team__item-image {
   position: relative;
   margin-bottom: 20px;
+  
 }
-.team__item-image:hover {
-  background-color: #18b5dc;
-}
+
 .team__item-photo {
   height: auto;
   max-width: 100%;
   object-fit: cover;
+  
 }
+
+/* icons */
+
 .team__item-social {
   position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #18b5dc;
+  opacity: 0;
+  transition: all 0.25s;
 }
-.team__item-link {
+.team__item-social:hover {
+  opacity: 1;
+}
+.social-link {
   display: block;
   width: 42px;
   height: 42px;
   border: 1px solid #18b5dc;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.25s;
 }
-.team__item-link:not(:last-of-type) {
+.social-link:not(:last-of-type) {
   margin-right: 4px;
+}
+.social-link:hover {
+  background-color: #18b5dc;
 }
 .social__icon--bg-blue {
   background-color: #5dcbe6;
+}
+.social__icon--bg-blue:hover {
+  background-color: #fff;
 }
 
 /* social icon white */
@@ -160,38 +182,65 @@ button {
 .social__icon--twitter {
   background-image: url(../images/icons/twitter.svg);
 }
+.social__icon--twitter:hover {
+  background-image: url(../images/icons/twitter_blue.svg);
+}
 .social__icon--facebook {
   background-image: url(../images/icons/facebook.svg);
+}
+.social__icon--facebook:hover {
+  background-image: url(../images/icons/facebook_blue.svg);
 }
 .social__icon--instagram {
   background-image: url(../images/icons/instagram.svg);
 }
+.social__icon--instagram:hover {
+  background-image: url(../images/icons/instagram_blue.svg);
+}
 .social__icon--linkein {
   background-image: url(../images/icons/linkedin.svg);
 }
+.social__icon--linkein:hover {
+  background-image: url(../images/icons/linkein_blue.svg);
+}
 .social__icon--telegram {
   background-image: url(../images/icons/telegram.svg);
+}
+.social__icon--telegram:hover {
+  background-image: url(../images/icons/telegram_blue.svg);
 }
 
 /* social icon blue */
 
 .social__icon--twitter-blue {
-  background-image: url(../images/icons/twitter__blue.svg);
+  background-image: url(../images/icons/twitter_blue.svg);
 }
 .social__icon--twitter-blue:hover {
-  background-image: url(../images/icons/twitter__blue.svg);
+  background-image: url(../images/icons/twitter.svg);
 }
 .social__icon--facebook-blue {
-  background-image: url(../images/icons/facebook__blue.svg);
+  background-image: url(../images/icons/facebook_blue.svg);
+}
+.social__icon--facebook-blue:hover {
+  background-image: url(../images/icons/facebook.svg);
 }
 .social__icon--instagram-blue {
-  background-image: url(../images/icons/instagram__blue.svg);
+  background-image: url(../images/icons/instagram_blue.svg);
+}
+.social__icon--instagram-blue:hover {
+  background-image: url(../images/icons/instagram.svg);
 }
 .social__icon--linkein-blue {
-  background-image: url(../images/icons/linkedin__blue.svg);
+  background-image: url(../images/icons/linkedin_blue.svg);
+}
+.social__icon--linkein-blue:hover {
+  background-image: url(../images/icons/linkein.svg);
 }
 .social__icon--telegram-blue {
-  background-image: url(../images/icons/twitter__blue.svg);
+  background-image: url(../images/icons/telegram_blue.svg);
+}
+.social__icon--telegram-blue:hover {
+  background-image: url(../images/icons/telegram.svg);
 }
 
 .team__item-description {
@@ -225,10 +274,13 @@ button {
   font-size: 18px;
   line-height: 22px;
 }
+
+/* icons */
+
 .footer-social__icons {
   display: flex;
   flex-direction: row;
 }
-.footer-social__icons .team__item-link:not(:last-of-type) {
+.footer-social__icons .social-link:not(:last-of-type) {
   margin-right: 10px;
 }
