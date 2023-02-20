@@ -57,7 +57,7 @@ button {
   font-weight: 600;
   font-size: 20px;
   line-height: 79px;
-  margin-right: 30px;
+  margin-right: 32px;
   transition: all 0.25s;
 }
 .nav__link:not(:last-of-type) {
@@ -100,7 +100,7 @@ button {
   line-height: 41px;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  margin-bottom: 64px;
+  margin-bottom: 54px;
   position: relative;
 }
 .about__title:after {
@@ -110,12 +110,12 @@ button {
   height: 4px;
   width: 45px;
   left: calc(50% - 22.5px);
-  bottom: -20px;
+  bottom: -17px;
 }
 .about__text {
   text-align: center;
   font-weight: 300;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 .section__team {
   display: flex;
@@ -270,7 +270,7 @@ button {
   align-items: center;
 }
 .footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 .footer__nav {
   margin-bottom: 28px;
@@ -278,6 +278,9 @@ button {
 .nav__link--footer {
   font-size: 18px;
   line-height: 22px;
+}
+.nav__link--footer:not(:last-of-type) {
+  margin-right: 22px;
 }
 
 /* icons */
