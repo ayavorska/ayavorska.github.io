@@ -45,7 +45,7 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.main__menu {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,16 +123,16 @@ button {
   justify-content: space-between;
 }
 
-.team__item:not(:last-of-type) {
+.team-item:not(:last-of-type) {
   margin-right: 30px;
 }
-.team__item-image {
+.team-item__image {
   position: relative;
   margin-bottom: 20px;
   
 }
 
-.team__item-photo {
+.team-item__photo {
   display: block;
   height: auto;
   max-width: 100%;
@@ -142,7 +142,7 @@ button {
 
 /* icons */
 
-.team__item-social {
+.team-item__social {
   position: absolute;
   top: 0;
   left: 0;
@@ -157,7 +157,7 @@ button {
   cursor: url(../images/cursor.svg), auto;
   transition: all 0.25s;
 }
-.team__item-social:hover {
+.team-item__social:hover {
   opacity: 1;
 }
 .social-link {
@@ -248,14 +248,14 @@ button {
   background-image: url(../images/icons/telegram.svg);
 }
 
-.team__item-description {
+.team-item__description {
   font-size: 18px;
   line-height: 22px;
 }
-.team__item-name {
+.team-item__name {
   font-weight: 700;
 }
-.team__item-position {
+.team-item__position {
   font-weight: 300;
 }
 
