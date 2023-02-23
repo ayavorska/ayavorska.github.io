@@ -90,6 +90,7 @@ button {
   line-height: 88px;
   color: #2f281e;
   padding: 0 10px;
+  display: inline-block;
 }
 .nav__link:hover {
   color: #ff9900;
