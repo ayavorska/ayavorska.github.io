@@ -116,6 +116,7 @@ body {
 .icon--like,
 .icon--download {
   display: inline-block;
+  border: none;
   background-color: #e0e0e0;
   border-radius: 8px;
   width: 40px;
