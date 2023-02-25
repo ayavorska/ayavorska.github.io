@@ -175,6 +175,7 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0;
+  z-index: 1;
 }
 .grid__description:before {
   content: "";
