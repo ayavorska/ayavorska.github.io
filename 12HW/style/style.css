@@ -42,10 +42,11 @@ ul {
 .header__menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .lang_selector {
   font-family: "Tourney";
-  margin-right: 50px;
+  margin-right: 55px;
 }
 .lang__link {
   line-height: 18px;
@@ -91,7 +92,7 @@ ul {
 /* main */
 
 .konstrukt__section {
-  padding: 150px 0 90px;
+  padding: 150px 0 20px;
 }
 .main__title {
   font-family: "Francois One", sans-serif;
@@ -110,14 +111,14 @@ ul {
   line-height: 30px;
   text-transform: capitalize;
   position: absolute;
-  top: -3px;
-  margin-left: 10px;
+  top: -6px;
+  margin-left: 12px;
 }
 .main__text {
   margin-bottom: 40px;
 }
-.chapter-4 .main__text:last-of-type {
-  margin-bottom: 0;
+.main__text:last-of-type {
+  margin-bottom: 70px;
 }
 .span--bg-gray {
   background-color: #dadada;
