@@ -46,7 +46,7 @@ ul {
 .lang__link {
   font-family: 'Tourney';
   line-height: 18px;
-
+  letter-spacing: 0.04em;
   margin-right: 50px;
 }
 .nav__item {
@@ -65,6 +65,7 @@ ul {
 }
 .nav__link {
   line-height: 28px;
+  letter-spacing: 0.03em;
   position: relative;
 }
 .lang__link,
