@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #000;
   font-size: 28px;
   line-height: 48px;
@@ -43,15 +43,17 @@ ul {
   display: flex;
   flex-direction: row;
 }
+.lang_selector {
+  font-family: "Tourney";
+  margin-right: 50px;
+}
 .lang__link {
-  font-family: 'Tourney';
   line-height: 18px;
   letter-spacing: 0.04em;
-  margin-right: 50px;
 }
 .nav__item {
   position: relative;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
 }
 .nav__item:not(:last-of-type) {
   margin-right: 28px;
@@ -92,7 +94,7 @@ ul {
   padding: 150px 0 90px;
 }
 .main__title {
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 400;
@@ -102,7 +104,7 @@ ul {
   position: relative;
 }
 .title__span {
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
@@ -112,11 +114,11 @@ ul {
   margin-left: 10px;
 }
 .main__text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .chapter-4 .main__text:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .span--bg-gray {
-    background-color: #DADADA;
+  background-color: #dadada;
 }
