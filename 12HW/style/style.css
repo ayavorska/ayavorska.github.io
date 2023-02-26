@@ -121,4 +121,6 @@ ul {
 }
 .span--bg-gray {
   background-color: #dadada;
+  height: 48px;
+  display: inline-block;
 }
