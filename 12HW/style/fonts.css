@@ -1,0 +1,67 @@
+/* farro */
+@font-face {
+    font-family: 'Farro';
+    src: url('../fonts/Farro-Light.woff2') format('woff2'),
+        url('../fonts/Farro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Francois One */
+@font-face {
+    font-family: 'Francois One';
+    src: url('../fonts/FrancoisOne.woff2') format('woff2'),
+        url('../fonts/FrancoisOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PT Sans */
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Italic.woff2') format('woff2'),
+        url('../fonts/PTSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Staatliches */
+@font-face {
+    font-family: 'Staatliches';
+    src: url('../fonts/Staatliches-Regular.woff2') format('woff2'),
+        url('../fonts/Staatliches-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Tourney */
+@font-face {
+    font-family: 'Tourney';
+    src: url('../fonts/Tourney-SemiBold.woff2') format('woff2'),
+        url('../fonts/Tourney-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,121 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  font-size: 28px;
+  line-height: 48px;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffff;
+  padding: 13px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav,
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+.lang__link {
+  font-family: 'Tourney';
+  line-height: 18px;
+
+  margin-right: 50px;
+}
+.nav__item {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+}
+.nav__item:not(:last-of-type) {
+  margin-right: 28px;
+}
+.nav__item:not(:last-of-type):after {
+  content: "/";
+  position: absolute;
+  right: -17px;
+  top: 2px;
+  font-size: 24px;
+}
+.nav__link {
+  line-height: 28px;
+  position: relative;
+}
+.lang__link,
+.nav__link {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  transition: all 0.25s;
+}
+.lang__link:hover,
+.nav__link:hover {
+  color: #ff0077;
+}
+.header__logo,
+.img__logo {
+  display: block;
+}
+
+/* main */
+
+.konstrukt__section {
+  padding: 150px 0 90px;
+}
+.main__title {
+  font-family: 'Francois One', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+.title__span {
+  font-family: 'Farro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  position: absolute;
+  top: -3px;
+  margin-left: 10px;
+}
+.main__text {
+    margin-bottom: 40px;
+}
+.chapter-4 .main__text:last-of-type {
+    margin-bottom: 0;
+}
+.span--bg-gray {
+    background-color: #DADADA;
+}
