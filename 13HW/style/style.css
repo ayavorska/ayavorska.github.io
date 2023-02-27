@@ -1,0 +1,230 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-size: 28px;
+  line-height: 48px;
+  font-weight: 400;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #ffff;
+  padding: 13px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav,
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lang_selector {
+  font-family: "Tourney";
+  margin-right: 55px;
+}
+.lang__link {
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+.nav__item {
+  position: relative;
+  font-family: "Staatliches", cursive;
+}
+.nav__item:not(:last-of-type) {
+  margin-right: 28px;
+}
+.nav__item:not(:last-of-type):after {
+  content: "/";
+  position: absolute;
+  right: -17px;
+  top: 2px;
+  font-size: 24px;
+}
+.nav__link {
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+.lang__link,
+.nav__link {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  transition: all 0.25s;
+}
+.lang__link:hover,
+.nav__link:hover,
+.sidebar__link:hover {
+  color: #ff0077;
+}
+.header__logo,
+.img__logo {
+  display: block;
+}
+
+/* main */
+
+.konstrukt__section {
+  padding: 80px 0 20px;
+  background-image: url(../images/bg-picture.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+.konstrukt__inner {
+  display: flex;
+}
+.konstrukt__sidebar {
+  width: 32%;
+  margin-right: 30px;
+}
+.konstrukt__sidebar--sticky {
+  position: sticky;
+  top: 160px;
+}
+.sidebar__link {
+  display: inline-block;
+  margin-bottom: 80px;
+  width: 100%;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.25s;
+  position: relative;
+}
+.sidebar__link:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.konstrukt__chapters {
+  width: 68%;
+}
+.main__title {
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+}
+.chapter__title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.chapter__title:before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+.title__span {
+  font-family: "Farro", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  position: absolute;
+  top: -6px;
+  margin-left: 12px;
+}
+.main__text {
+  margin-bottom: 32px;
+}
+.main__text:last-of-type {
+  margin-bottom: 60px;
+}
+.--bg-gray {
+  background-color: #dadada;
+  height: 48px;
+  display: inline-block;
+}
+
+/* users */
+
+.users {
+  padding: 70px 0 90px;
+}
+.users__title {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-family: "Roboto", sans-serif;
+  padding-left: 120px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.users__title:before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 4px);
+}
+.users__content {
+  display: grid;
+  grid-template: repeat(2, 180px) / repeat(4, 270px);
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+.item__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+.user__item:hover .item__link {
+  transform: rotateX(180deg);
+  background-color: #1a1a1a;
+}
+.user__item svg {
+  transition: filter .25s;
+}
+.user__item:hover svg {
+  transform: rotateX(180deg);
+  filter: invert(100%);
+}
