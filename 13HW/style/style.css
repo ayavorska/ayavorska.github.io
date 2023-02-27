@@ -216,6 +216,7 @@ ul {
   width: 100%;
   height: 100%;
   transition: transform 1s;
+  cursor: pointer;
 }
 .user__item:hover .item__link {
   transform: rotateX(180deg);
