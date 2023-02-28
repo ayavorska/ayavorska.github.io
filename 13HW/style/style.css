@@ -97,7 +97,7 @@ ul {
   padding: 80px 0 20px;
   background-image: url(../images/bg-picture.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 100% 160px;
   background-attachment: fixed;
 }
 .konstrukt__inner {
