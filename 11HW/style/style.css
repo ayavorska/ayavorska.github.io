@@ -109,6 +109,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: all 0.25s;
+  
 }
 .grid__item:hover .grid__icons {
   opacity: 1;
@@ -159,6 +160,9 @@ body {
 }
 .grid__item:hover .grid__photo:before {
   opacity: 0;
+}
+.grid__item:hover .grid__photo:hover {
+  transform: scale(1.1);
 }
 
 .grid__img {
