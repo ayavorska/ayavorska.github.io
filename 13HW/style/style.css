@@ -105,6 +105,7 @@ ul {
 .konstrukt__sidebar {
   width: 32%;
   margin-right: 30px;
+  padding-left: 10px;
 }
 .konstrukt__sidebar--sticky {
   position: sticky;
@@ -130,7 +131,8 @@ ul {
   left: 0;
 }
 .konstrukt__chapters {
-  width: 68%;
+  width: calc(68% - 30px);
+  padding-top: 18px;
 }
 .main__title {
   font-family: "Francois One", sans-serif;
@@ -151,7 +153,7 @@ ul {
   background-color: #000;
   position: absolute;
   left: 0;
-  top: -20px;
+  top: -28px;
 }
 .title__span {
   font-family: "Farro", sans-serif;
