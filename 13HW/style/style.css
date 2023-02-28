@@ -88,6 +88,7 @@ ul {
 .header__logo,
 .img__logo {
   display: block;
+  margin-left: auto;
 }
 
 /* main */
