@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -21,6 +22,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+.container input,
+.container select,
+.container button {
+  cursor: pointer;
+}
 .forms {
   background-color: #f7f7f7;
   padding: 55px 0;
@@ -35,6 +41,23 @@ body {
   width: calc(50% - 15px);
   border-radius: 6px;
 }
+.form__content small,
+.terms {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+.form__content a {
+  font-family: "Roboto";
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: -0.1px;
+  color: #007bff;
+}
+
+/* block 1 */
+
 .--block-1 {
   margin-right: 30px;
 }
@@ -49,10 +72,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.form__field {
+.form__inputs-row .form__field {
   display: flex;
   flex-direction: column;
+  width: calc(50% - 5px);
+}
+.--email input {
+  width: 100%;
+  margin-bottom: 7px;
 }
 .form__field,
 .form__btn,
@@ -65,12 +92,178 @@ body {
   height: 38px;
   border: 1px solid #e4e4e4;
   border-radius: 6px;
+  transition: all 0.25s;
+  outline: none;
+}
+.form__content input:focus,
+.form__content select:focus {
+  border: 1px solid #007bff;
 }
 .form__content input:not(:last-of-type),
 .form__content select:not(:last-of-type) {
   margin-right: 12px;
 }
 .input-label {
+  display: block;
   text-transform: capitalize;
   margin-bottom: 7px;
+}
+.radio__inputs {
+  text-transform: capitalize;
+  display: flex;
+}
+.radio__input {
+  display: flex;
+  align-items: center;
+}
+.radio__input:not(:last-of-type) {
+  margin-right: 20px;
+}
+.form__field option selected{
+  font-family: 'Inter', sans-serif;
+  color: #545454;
+}
+.form__btn {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-transform: capitalize;
+  transition: all 0.25s;
+}
+.form__btn:hover {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #007bff;
+}
+.btn-create {
+  width: 100%;
+}
+.terms {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 21px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.form__log-in {
+  display: flex;
+  justify-content: center;
+}
+.form__log-in p {
+  margin-right: 20px;
+}
+.log-in-link {
+  font-weight: 500;
+}
+
+/* block 2 */
+
+.--block-2 .customer__photo {
+  display: flex;
+}
+
+/* checkmark */
+
+.radio__input {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+}
+.radio__input input {
+  position: absolute;
+  opacity: 0;
+}
+.radio__input label,
+.checkmark {
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+}
+.radio__input:hover input ~ .checkmark {
+  background-color: #e4e4e4;
+}
+.radio__input input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio__input input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio__input .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* upload */
+
+.form__photo {
+  margin-right: 20px;
+}
+.form__img {
+  display: block;
+}
+.upload__input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding-top: 15px;
+}
+.upload__input label {
+  display: block;
+  position: relative;
+  height: 30px;
+  max-width: 138px;
+  padding: 8px 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  transition: all 0.25s;
+  outline: none;
+}
+.upload__input input {
+  position: absolute;
+  opacity: 0;
+}
+.photo__icon {
+  display: block;
+  position: absolute;
+  right: 9px;
+  bottom: 1px;
+}
+
+.trash__btn {
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  margin-top: 15px;
+  background-color: #fff;
+  background-image: url("../img/trash_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transition: all 0.25s;
+}
+.trash__btn:hover {
+  background-color: #e2e2e2;
 }
