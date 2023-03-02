@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-padding-top: 150px;
+}
 body {
   font-family: "PT Sans", sans-serif;
   color: #000;
@@ -135,6 +138,9 @@ ul {
   width: calc(68% - 30px);
   padding-top: 18px;
 }
+.main__chapter {
+  margin-bottom: 98px;
+}
 .main__title {
   font-family: "Francois One", sans-serif;
   font-size: 36px;
@@ -170,7 +176,7 @@ ul {
   margin-bottom: 35px;
 }
 .main__text:last-of-type {
-  margin-bottom: 98px;
+  margin-bottom: 0;
 }
 .--bg-gray {
   background-color: #dadada;
@@ -226,7 +232,7 @@ ul {
   background-color: #1a1a1a;
 }
 .user__item svg {
-  transition: filter .25s;
+  transition: filter 0.25s;
 }
 .user__item:hover svg {
   transform: rotateX(180deg);
