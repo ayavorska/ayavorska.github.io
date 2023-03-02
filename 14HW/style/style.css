@@ -180,7 +180,9 @@ body {
 }
 .radio__input input {
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
 }
 .radio__input label,
 .checkmark {
@@ -272,7 +274,9 @@ select {
 }
 .upload__input input {
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
 }
 .photo__icon {
   display: block;
