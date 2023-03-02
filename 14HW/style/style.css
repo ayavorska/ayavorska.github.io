@@ -13,7 +13,9 @@ body {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.2px;
-
+  /* знаю, що так не можна - це для вигляду */
+  height: 100vh;
+  background-color: #f7f7f7;
   color: #545454;
 }
 
@@ -32,7 +34,6 @@ body {
   margin-top: 7px;
 }
 .forms {
-  background-color: #f7f7f7;
   padding: 55px 0;
 }
 .forms__inner {
@@ -121,8 +122,8 @@ body {
 .radio__input:not(:last-of-type) {
   margin-right: 20px;
 }
-.form__field select{
-  font-family: 'Inter', sans-serif;
+.form__field select {
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #545454;
 }
@@ -228,7 +229,7 @@ select {
   position: relative;
 }
 .select_field:after {
-  content: '';
+  content: "";
   height: 18px;
   width: 18px;
   font: 17px "Consolas", monospace;
@@ -240,7 +241,6 @@ select {
   bottom: 10px;
   pointer-events: none;
 }
-
 
 /* upload */
 
