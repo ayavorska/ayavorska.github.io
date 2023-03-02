@@ -27,6 +27,10 @@ body {
 .container button {
   cursor: pointer;
 }
+.help-text {
+  display: block;
+  margin-top: 7px;
+}
 .forms {
   background-color: #f7f7f7;
   padding: 55px 0;
@@ -79,7 +83,6 @@ body {
 }
 .--email input {
   width: 100%;
-  margin-bottom: 7px;
 }
 .form__field,
 .form__btn,
@@ -106,7 +109,6 @@ body {
 .input-label {
   display: block;
   text-transform: capitalize;
-  margin-bottom: 7px;
 }
 .radio__inputs {
   text-transform: capitalize;
@@ -119,8 +121,9 @@ body {
 .radio__input:not(:last-of-type) {
   margin-right: 20px;
 }
-.form__field option selected{
+.form__field select{
   font-family: 'Inter', sans-serif;
+  font-size: 15px;
   color: #545454;
 }
 .form__btn {
@@ -214,6 +217,30 @@ body {
   border-radius: 50%;
   background: #fff;
 }
+
+/* select */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select_field {
+  position: relative;
+}
+.select_field:after {
+  content: '';
+  height: 18px;
+  width: 18px;
+  font: 17px "Consolas", monospace;
+  background-image: url("../img/select_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  pointer-events: none;
+}
+
 
 /* upload */
 
