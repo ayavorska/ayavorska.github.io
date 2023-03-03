@@ -185,6 +185,7 @@ body {
   height: 1px;
 }
 .radio__input label,
+.upload__input label,
 .checkmark {
   cursor: pointer;
 }
