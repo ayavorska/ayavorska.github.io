@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --form-color-main: #16133d;
+  --form-color-white: #ffffff;
+  --form-color-border-item: #E5EAF4;
+  --form-color-border-item-hover: #3DB370;
+  --form-color-light-gray: #efeef3;
+  --form-color-gray: #7690A8;
+
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--form-color-main);
+}
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--form-color-light-gray);
+}
+.header__logo a,
+.header__logo img {
+  display: block;
+}
