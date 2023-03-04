@@ -24,8 +24,6 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-.container input,
-.container select,
 .container button {
   cursor: pointer;
 }
@@ -33,27 +31,27 @@ body {
   display: block;
   margin-top: 7px;
 }
-.forms {
+.section__forms {
   padding: 55px 0;
 }
-.forms__inner {
+.section__forms__inner {
   display: flex;
   justify-content: space-between;
 }
-.form__content {
+.section__form__content {
   background-color: #fff;
   padding: 35px;
   width: calc(50% - 15px);
   border-radius: 6px;
 }
-.form__content small,
+.section__form__content small,
 .terms {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.1px;
   color: #969696;
 }
-.form__content a {
+.section__form__content a {
   font-family: "Roboto";
   text-transform: capitalize;
   text-decoration: none;
@@ -88,8 +86,8 @@ body {
 .terms {
   margin-bottom: 20px;
 }
-.form__content input,
-.form__content select {
+.section__form__content input,
+.section__form__content select {
   padding: 8px 10px;
   height: 38px;
   border: 1px solid #e4e4e4;
@@ -97,12 +95,12 @@ body {
   transition: all 0.25s;
   outline: none;
 }
-.form__content input:focus,
-.form__content select:focus {
+.section__form__content input:focus,
+.section__form__content select:focus {
   border: 1px solid #007bff;
 }
-.form__content input:not(:last-of-type),
-.form__content select:not(:last-of-type) {
+.section__form__content input:not(:last-of-type),
+.section__form__content select:not(:last-of-type) {
   margin-right: 12px;
 }
 .input-label {
