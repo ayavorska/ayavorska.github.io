@@ -38,6 +38,7 @@ body {
   z-index: 2;
   width: 100%;
   padding: 22px 0;
+  background-color: var(--form-color-white);
   border-bottom: 1px solid var(--form-color-light-gray);
 }
 .header__logo a,
