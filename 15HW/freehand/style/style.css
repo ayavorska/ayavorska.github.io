@@ -124,6 +124,10 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
+.item__icon svg {
+  width: 60%;
+  height: 60%;
+}
 .item__title {
   font-size: 24px;
   line-height: 21px;
@@ -165,4 +169,8 @@ body {
 }
 .social-link:hover svg path {
   fill: var(--form-color-border-item-hover);
+}
+.social-link svg {
+  width: 50%;
+  height: 50%;
 }
