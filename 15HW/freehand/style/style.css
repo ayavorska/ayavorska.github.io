@@ -114,7 +114,7 @@ body {
 .active .item__icon {
   border-color: var(--form-color-border-icon-hover);
 }
-.item__icon {
+.item-card__icon {
   width: 64px;
   height: 64px;
   border: 1px solid var(--form-color-border-item);
@@ -124,11 +124,11 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-.item__icon svg {
+.item-card__icon svg {
   width: 60%;
   height: 60%;
 }
-.item__title {
+.item-card__title {
   font-size: 24px;
   line-height: 21px;
   letter-spacing: 0.2px;
@@ -137,7 +137,7 @@ body {
 .main__text {
   margin-bottom: 30px;
 }
-.item__link {
+.item-card__link {
   font-weight: 600;
   line-height: 19px;
   color: var(--form-color-border-item-hover);
