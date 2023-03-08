@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$c-main: #666666;
+$c-subtitle: #898F8F;
+$c-yellow: #FFCC00;
+$c-white: #ffffff;
+$c-light-gray: #CCCCCC;
+$c-gray: #333333;
+
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $c-main;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90%;
+}
