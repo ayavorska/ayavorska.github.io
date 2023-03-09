@@ -169,6 +169,7 @@
     padding: 5px 10px;
     border: 1px solid $c-yellow;
     transition: all 0.25s;
+    display: inline-block;
     &:hover {
       background-color: $c-yellow;
       color: $c-white;
