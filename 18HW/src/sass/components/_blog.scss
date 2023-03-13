@@ -1,7 +1,7 @@
 .blog {
   &__title {
     margin-bottom: 50px;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       text-align: center;
     }
   }
@@ -14,7 +14,7 @@
     order: 2;
   }
   .main-content__link .blog__content .main-content__img {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       order: 2;
     }
   }
@@ -25,12 +25,12 @@
     @media screen and (max-width: 768px) {
       gap: 20px;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       flex-direction: column;
     }
     .main-content__img {
       width: 50%;
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         width: 100%;
       }
     }
@@ -40,7 +40,7 @@
       @media screen and (max-width: 768px) {
         padding: 0;
       }
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         width: 100%;
       }
     }
