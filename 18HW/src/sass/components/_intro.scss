@@ -1,0 +1,16 @@
+.intro {
+  background-image: url("../../assets/images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  padding-top: 100px;
+  &__title {
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: pxToRem(48);
+    line-height: 64px;
+    color: var(--c-main-title);
+    width: 60%;
+  }
+}

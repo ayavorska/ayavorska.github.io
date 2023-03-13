@@ -1,0 +1,18 @@
+.post {
+  &__heading {
+
+  }
+  &__inner {
+    display: flex;
+    gap: 30px;
+  }
+  &__content {
+    img {
+      height: 260px;
+    }
+    .main-content__title {
+        font-size: pxToRem(22);
+        line-height: 37px;
+    }
+  }
+}

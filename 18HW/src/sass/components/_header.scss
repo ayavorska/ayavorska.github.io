@@ -1,0 +1,76 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--c-white);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-link,
+  img {
+    display: block;
+  }
+  &__right-side {
+    display: flex;
+    align-items: center;
+  }
+}
+.header-nav {
+  &__menu {
+    display: flex;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 40px 21px;
+    color: var(--c-main-title);
+    text-transform: uppercase;
+    font-size: pxToRem(14);
+    line-height: 17px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      transform: scaleX(0);
+      height: 1px;
+      left: calc(50% - 20px);
+      bottom: calc(50% - 10px);
+      background-color: var(--c-main-title);
+      transform-origin: center;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: center;
+    }
+  }
+  &__link-active:after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+}
+.header-search {
+  margin-left: 53px;
+  padding: 39px 0 39px 10px;
+  cursor: pointer;
+  &__button {
+    width: 17px;
+    height: 16px;
+    border: none;
+    background-color: var(--c-white);
+    cursor: pointer;
+  }
+  svg path {
+    transition: all 0.25s;
+  }
+  &:hover {
+    svg path {
+      fill: var(--c-main-text);
+    }
+  }
+}

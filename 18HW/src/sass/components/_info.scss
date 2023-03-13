@@ -1,0 +1,28 @@
+.info {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 43%;
+  }
+  &__title {
+    font-family: "Red Hat Display";
+    font-size: pxToRem(23);
+    line-height: 38px;
+    color: var(--c-main-title);
+  }
+  &__link {
+    svg {
+      width: 24px;
+      height: 12px;
+    }
+  }
+  &__text {
+    font-size: pxToRem(19);
+    line-height: 32px;
+    &:first-of-type {
+      margin-bottom: 28px;
+    }
+  }
+}

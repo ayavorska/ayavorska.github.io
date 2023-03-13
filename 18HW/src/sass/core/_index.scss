@@ -1,0 +1,75 @@
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c-main-text: #565656;
+  --c-main-title: #000000;
+  --c-white: #ffffff;
+  --c-gray: #7b7b7b;
+  --c-footer-bg: #f4f4f4;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: pxToRem(16);
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: var(--c-main-text);
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Red Hat Display";
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.section-p {
+  padding: 45px 0;
+  &:nth-of-type(2) {
+    padding-top: 90px;
+  }
+  &:last-of-type {
+    padding-bottom: 90px;
+  }
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  &__title {
+    font-weight: 600;
+    font-size: pxToRem(28);
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    color: var(--c-main-title);
+  }
+  &__link {
+    color: var(--c-gray);
+    display: inline-block;
+    text-decoration: none;
+    svg {
+      margin-left: 20px;
+      width: 24px;
+      height: 12px;
+    }
+  }
+}
+.main-content__heading,
+.main-content__data,
+.main-content__subtitle {
+  color: var(--c-gray);
+}

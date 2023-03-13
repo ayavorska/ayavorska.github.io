@@ -1,0 +1,22 @@
+.popular {
+    &__heading {
+        
+    }
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    &__content {
+        width: 50%;
+        &__title {
+            font-size: pxToRem(24);
+            line-height: 40px;
+          }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

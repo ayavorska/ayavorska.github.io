@@ -1,0 +1,11 @@
+@function pxToRem ($px) {
+    @return calc($px / 16) + rem;
+}
+@mixin generateSizes () {
+    $fonts-sizes-list: 12 14 16 19 22 23 24 28 48 ;
+    @each $value in $fonts-sizes-list {
+        .--fs-#{$value} {
+            font-size: pxToRem($value);
+        }
+    }
+}

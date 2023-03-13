@@ -1,0 +1,37 @@
+.main-content {
+  &__img {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__article {
+  }
+  &__heading {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: pxToRem(12);
+    line-height: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: pxToRem(22);
+    line-height: 37px;
+
+    letter-spacing: 0.1em;
+    color: var(--c-main-title);
+  }
+  &__data {
+  }
+  &__text {
+    letter-spacing: 0.05em;
+  }
+  &__link {
+    margin-left: 10px;
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+  }
+}
