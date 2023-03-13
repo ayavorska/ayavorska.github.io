@@ -130,7 +130,7 @@
     input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
-      background: #232323;
+      background: var(--c-main-title);
     }
     input:checked ~ span:nth-last-child(3) {
       opacity: 0;
@@ -140,10 +140,12 @@
       transform: rotate(-45deg) translate(0, -1px);
     }
     & .header-nav__menu {
+      opacity: 0;
       position: fixed;
       right: 0;
       top: 0;
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       padding: 50px;
       padding-top: 125px;
       display: flex;
@@ -151,16 +153,17 @@
       background: var(--c-white);
       transform-origin: 0% 0%;
       transform: translateX(100%);
+      transition: all 0.5s ease;
 
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
       @media screen and (max-width: 480px) {
-        width: 100%;
+        max-width: 100%;
         height: 100%;
       }
     }
 
-    input:checked ~ ul {
-      transform: none;
+    input:checked ~ .header-nav__menu {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
