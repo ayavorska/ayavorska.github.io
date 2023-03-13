@@ -1,10 +1,10 @@
 .header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    background-color: var(--c-white);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: var(--c-white);
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,10 @@
 .header-nav {
   &__menu {
     display: flex;
+    @media screen and (max-width: 768px) {
+      display: none;
+        
+      }
   }
   &__link {
     display: inline-block;
@@ -58,12 +62,21 @@
   margin-left: 53px;
   padding: 39px 0 39px 10px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    margin-right: 40px;
+      
+    }
   &__button {
     width: 17px;
     height: 16px;
     border: none;
     background-color: var(--c-white);
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+      width: 20px;
+      height: 20px;
+        
+      }
   }
   svg path {
     transition: all 0.25s;
@@ -71,6 +84,82 @@
   &:hover {
     svg path {
       fill: var(--c-main-text);
+    }
+  }
+}
+.header-burger {
+  &__menu-toggle {
+    display: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    input {
+      display: block;
+      width: 38px;
+      height: 36px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+
+      cursor: pointer;
+
+      opacity: 0;
+      z-index: 2;
+    }
+    span {
+      display: block;
+      width: 34px;
+      height: 2px;
+      margin-bottom: 10px;
+      position: relative;
+      background: var(--c-main-title);
+      z-index: 1;
+      transform-origin: -2px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+
+    span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+    input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    & .header-nav__menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 300px;
+      padding: 50px;
+      padding-top: 125px;
+      display: flex;
+      flex-direction: column;
+      background: var(--c-white);
+      transform-origin: 0% 0%;
+      transform: translateX(100%);
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    input:checked ~ ul {
+      transform: none;
     }
   }
 }

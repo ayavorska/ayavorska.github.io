@@ -1,4 +1,5 @@
 .main-content {
+
   &__img {
     img {
       display: block;
@@ -28,10 +29,16 @@
   &__text {
     letter-spacing: 0.05em;
   }
-  &__link {
+  &__link-arrow {
     margin-left: 10px;
     display: inline-block;
     width: 24px;
     height: 12px;
+  }
+  &__link {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: var(--c-main-text);
   }
 }

@@ -5,12 +5,16 @@
   height: 80vh;
   background-size: cover;
   padding-top: 100px;
+  @media screen and (max-width: 768px) {
+  padding-top: 30px;
+    
+  }
   &__title {
-    font-family: "Red Hat Display";
     font-weight: 600;
-    font-size: pxToRem(48);
-    line-height: 64px;
-    color: var(--c-main-title);
     width: 60%;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+        
+      }
   }
 }

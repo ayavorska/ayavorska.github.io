@@ -1,18 +1,24 @@
 .post {
   &__heading {
-
   }
   &__inner {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__content {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
     img {
       height: 260px;
     }
     .main-content__title {
-        font-size: pxToRem(22);
-        line-height: 37px;
+      font-size: pxToRem(22);
+      line-height: 37px;
     }
   }
 }

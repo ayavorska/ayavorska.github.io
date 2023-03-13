@@ -1,11 +1,5 @@
 .blog {
   &__title {
-    font-family: "Red Hat Display";
-    font-weight: 400;
-    font-size: pxToRem(48);
-    line-height: 64px;
-    letter-spacing: 0.05em;
-    color: var(--c-main-title);
     margin-bottom: 50px;
   }
   &__inner {
@@ -17,18 +11,28 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    &:last-child .main-content__img {
+    @media screen and (max-width: 768px) {
+      gap: 20px;
+    }
+    &:nth-of-type(2) .main-content__link {
       order: 2;
     }
     .main-content__img {
-      width: 50%;
+      @media screen and (max-width: 768px) {
+        
+      }
     }
     .main-content__article {
-      width: 50%;
       padding: 80px 120px 83px 0;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
     }
     &:last-child .main-content__article {
       padding: 80px 0 83px 120px;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
     }
     .main-content__subtitle {
       margin-bottom: 30px;

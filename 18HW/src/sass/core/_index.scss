@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./beakpoints";
 
 * {
   margin: 0;
@@ -36,6 +37,13 @@ h4 {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    max-width: 720px;
+  }
+  @media screen and (max-width: 320px) {
+    max-width: 100%;
+    padding: 0 5px;
+  }
 }
 .section-p {
   padding: 45px 0;
@@ -44,6 +52,25 @@ h4 {
   }
   &:last-of-type {
     padding-bottom: 90px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 35px 0;
+    &:nth-of-type(2) {
+      padding-top: 70px;
+    }
+    &:last-of-type {
+      padding-bottom: 70px;
+    }
+  }
+}
+.title {
+  font-weight: 400;
+  font-size: pxToRem(48);
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: var(--c-main-title);
+  @media screen and (max-width: 768px) {
+    font-size: pxToRem(36);
   }
 }
 .heading {
