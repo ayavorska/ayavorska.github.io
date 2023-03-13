@@ -6,15 +6,20 @@
   background-size: cover;
   padding-top: 100px;
   @media screen and (max-width: 768px) {
-  padding-top: 30px;
-    
+    padding-top: 30px;
+  }
+  @media screen and (max-width: 320px) {
+    padding-top: 70px;
   }
   &__title {
     font-weight: 600;
+    line-height: 50px;
     width: 60%;
     @media screen and (max-width: 768px) {
       width: 80%;
-        
-      }
+    }
+    @media screen and (max-width: 320px) {
+      font-size: pxToRem(30);
+    }
   }
 }

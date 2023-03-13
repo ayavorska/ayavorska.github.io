@@ -70,8 +70,12 @@ h4 {
   letter-spacing: 0.05em;
   color: var(--c-main-title);
   @media screen and (max-width: 768px) {
-    font-size: pxToRem(36);
+    
   }
+  @media screen and (max-width: 320px) {
+    
+  
+  }  
 }
 .heading {
   display: flex;
@@ -79,6 +83,7 @@ h4 {
   margin-bottom: 48px;
    @media screen and (max-width: 320px) {
     flex-direction: column;
+    justify-content: start;
    }
   &__title {
     font-weight: 600;

@@ -32,6 +32,10 @@
     font-size: pxToRem(23);
     line-height: 38px;
     color: var(--c-main-title);
+    @media screen and (max-width: 320px) {
+      font-size: pxToRem(24);
+      line-height: 40px;
+    }
   }
   &__link {
     svg {

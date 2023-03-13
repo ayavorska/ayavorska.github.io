@@ -12,12 +12,19 @@
     @media screen and (max-width: 768px) {
       order: 2;
     }
+    @media screen and (max-width: 320px) {
+      order: 0;
+    }
   }
   &__content {
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: row;
       gap: 20px;
+    }
+    @media screen and (max-width: 320px) {
+      gap: 25px;
+      flex-direction: column;
     }
     img {
       height: 260px;
@@ -26,10 +33,22 @@
       @media screen and (max-width: 768px) {
         width: 50%;
       }
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
     }
     .main-content__article {
       @media screen and (max-width: 768px) {
         width: 50%;
+      }
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
+    }
+    .main-content__heading {
+      @media screen and (max-width: 320px) {
+        font-size: pxToRem(16);
+
       }
     }
     .main-content__title {

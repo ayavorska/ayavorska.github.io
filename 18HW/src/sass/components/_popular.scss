@@ -1,6 +1,5 @@
 .popular {
     &__heading {
-        
     }
     &__inner {
         display: flex;
@@ -9,13 +8,29 @@
         @media screen and (max-width: 768px) {
             gap: 20px;
         }
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+            gap: 50px;
+        }
     }
     &__content {
         width: 50%;
+        @media screen and (max-width: 320px) {
+            width: 100%;
+            .main-content__heading {
+                margin: 22px 0 12px;
+
+            }
+            .main-content__title {
+                margin-bottom: 10px;
+            }
+          }
         &__title {
             font-size: pxToRem(24);
             line-height: 40px;
+            
           }
+
     }
     &__button {
         display: flex;
