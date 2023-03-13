@@ -318,6 +318,9 @@ h4 {
   flex-direction: column;
   gap: 50px;
 }
+.blog .main-content__link:nth-of-type(2) .blog__content .main-content__img {
+  order: 2;
+}
 .blog__content {
   display: flex;
   flex-direction: row;
@@ -328,11 +331,12 @@ h4 {
     gap: 20px;
   }
 }
-.blog__content:nth-of-type(2) .main-content__link {
-  order: 2;
+.blog__content .main-content__img {
+  width: 50%;
 }
 .blog__content .main-content__article {
   padding: 80px 120px 83px 0;
+  width: 50%;
 }
 @media screen and (max-width: 768px) {
   .blog__content .main-content__article {
@@ -404,13 +408,29 @@ h4 {
   }
 }
 @media screen and (max-width: 768px) {
+  .post .main-content__link:nth-of-type(2) .post__content .main-content__img {
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
   .post__content {
     display: flex;
     flex-direction: row;
+    gap: 20px;
   }
 }
 .post__content img {
   height: 260px;
+}
+@media screen and (max-width: 768px) {
+  .post__content .main-content__img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .post__content .main-content__article {
+    width: 50%;
+  }
 }
 .post__content .main-content__title {
   font-size: 1.375rem;
@@ -421,6 +441,11 @@ h4 {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .popular__inner {
+    gap: 20px;
+  }
 }
 .popular__content {
   width: 50%;
@@ -439,8 +464,34 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .info__inner {
+    flex-direction: column;
+  }
+}
 .info__content {
   width: 43%;
+}
+@media screen and (max-width: 768px) {
+  .info__content {
+    width: 100%;
+    padding-left: 40px;
+    text-align: right;
+  }
+  .info__content:not(:last-of-type) {
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .info__content {
+    text-align: left;
+    padding-left: 0;
+  }
+  .info__content:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 .info__title {
   font-family: "Red Hat Display";
@@ -470,14 +521,31 @@ h4 {
   align-items: center;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .footer__copyright {
   font-size: 0.75rem;
   color: var(--c-main-title);
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-contact {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 .footer-contact__title {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .footer-contact__title {
+    margin-bottom: 20px;
+  }
 }
 .footer-contact__link {
   text-decoration: none;

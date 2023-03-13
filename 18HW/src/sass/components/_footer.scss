@@ -6,6 +6,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   &__copyright {
     font-size: pxToRem(12);
@@ -14,8 +18,15 @@
   }
 }
 .footer-contact {
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 50px;
+  }
   &__title {
     margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
   &__link {
     text-decoration: none;

@@ -8,13 +8,29 @@
       flex-direction: column;
     }
   }
+  .main-content__link:nth-of-type(2) .post__content .main-content__img {
+    @media screen and (max-width: 768px) {
+      order: 2;
+    }
+  }
   &__content {
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: row;
+      gap: 20px;
     }
     img {
       height: 260px;
+    }
+    .main-content__img {
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+    }
+    .main-content__article {
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
     }
     .main-content__title {
       font-size: pxToRem(22);

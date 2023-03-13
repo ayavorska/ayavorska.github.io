@@ -2,9 +2,30 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__content {
     width: 43%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-left: 40px;
+      text-align: right;
+      &:not(:last-of-type) {
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      text-align: left;
+      padding-left: 0;
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+
   }
   &__title {
     font-family: "Red Hat Display";
