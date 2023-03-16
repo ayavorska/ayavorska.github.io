@@ -7,6 +7,7 @@
 
 :root {
   --c-gray-light-main: #BDBDBD;
+  --c-gray-gray-dark: #4F4F4F;
   --c-blue-darken-bg: #161D31;
   --c-blue-dark-sidebar: #283046;
   --c-white: #fff;
@@ -28,22 +29,3 @@ ul {
   list-style: none;
 }
 
-.site-container {
-    background: var(--c-blue-darken-bg);
-    display: flex;
-    svg {
-        width: 32px;
-        height: 32px;
-        display: block;
-    }
-}
-.wrapper {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    svg {
-        width: 26px;
-        height: 26px;
-        display: block;
-    }
-}

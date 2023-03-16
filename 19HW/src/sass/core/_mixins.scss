@@ -2,7 +2,7 @@
     @return calc($px / 16) + rem;
 }
 @mixin generateSizes () {
-    $fonts-sizes-list: 14 16 18 ;
+    $fonts-sizes-list: 12 14 16 18 ;
     @each $value in $fonts-sizes-list {
         .--fs-#{$value} {
             font-size: pxToRem($value);

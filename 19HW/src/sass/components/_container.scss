@@ -1,0 +1,38 @@
+.site-container {
+  overflow: hidden;
+  display: flex;
+  background-color: var(--c-blue-darken-bg);
+}
+.wrapper {
+  max-width: 1190px;
+
+  padding: 0 10px;
+  margin: 0 auto;
+  svg {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  @media screen and (max-width: 1280px) {
+    width: 1000px;
+  }
+  @media screen and (max-width: 1090px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 890px) {
+    width: 720px;
+  }
+  @media screen and (max-width: 810px) {
+    width: 610px;
+  }
+  @media screen and (max-width: 690px) {
+    width: 540px;
+  }
+  @media screen and (max-width: 620px) {
+    width: 430px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+}
