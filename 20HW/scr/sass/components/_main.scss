@@ -27,6 +27,9 @@
   }
   &__link {
     margin-bottom: 20px;
+    &:first-of-type {
+      margin-bottom: 0;
+    }
     img {
       width: 100%;
       height: auto;
