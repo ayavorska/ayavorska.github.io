@@ -26,17 +26,15 @@
     display: block;
   }
   &__link {
-    margin-bottom: 20px;
-    &:first-of-type {
-      margin-bottom: 0;
-    }
+    
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
   }
-  &__text { 
+  &__text {
+    margin-top: 20px;
     &.--left {
       width: 50%;
       @media screen and (max-width: 768px) {

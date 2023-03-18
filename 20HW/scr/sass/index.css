@@ -126,17 +126,14 @@ h4 {
 .main-content__link, .main-content__link picture, .main-content__link img {
   display: block;
 }
-.main-content__link {
-  margin-bottom: 20px;
-}
-.main-content__link:first-of-type {
-  margin-bottom: 0;
-}
 .main-content__link img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main-content__text {
+  margin-top: 20px;
 }
 .main-content__text.--left {
   width: 50%;
