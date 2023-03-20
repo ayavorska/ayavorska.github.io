@@ -918,7 +918,20 @@
       </div>
     </div>
     <script>
-        
+      function getRandom(min, max) {
+        return Math.ceil(Math.random() * (max - min) + min);
+      }
+
+      function animateRandomEl() {
+        let hoveredEl = document.querySelector(".flip-card.hover");
+        if (hoveredEl) {
+          hoveredEl.classList.remove("hover");
+        }
+        let cardEls = document.querySelectorAll(".flip-card");
+        let randomNumber = getRandom(0, cardEls.length - 1);
+        cardEls[randomNumber].classList.add("hover");
+      }
+      setInterval(animateRandomEl, 1000);
     </script>
   </body>
 </html>
