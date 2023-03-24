@@ -1,0 +1,62 @@
+.button-simple {
+  font-family: "Montserrat", sans-serif;
+  background: $c-white;
+  border: 1px solid $c-violet;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  text-transform: capitalize;
+  color: $c-violet-dark;
+  font-size: $fs-16;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  max-width: 210px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  &:hover {
+    background-color: $c-violet;
+    color: $c-white;
+  }
+  svg path {
+    transition: all 0.4s;
+  }
+  &:hover svg path {
+    stroke: $c-white;
+  }
+}
+.btn-violet,
+.btn-pink {
+  font-size: $fs-18;
+  color: $c-white;
+  transition: all 0.4s;
+  font-weight: 500;
+}
+.btn-violet {
+  background: $c-violet;
+  &:hover {
+    background: $c-violet-medium;
+  }
+}
+.btn-pink {
+  background: $c-pink;
+  border: 1px solid $c-pink;
+  &:hover {
+    background: $c-pink-middle;
+  }
+}
+.arrow-icon {
+  width: 20px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  fill: none;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
