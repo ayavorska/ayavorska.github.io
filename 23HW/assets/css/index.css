@@ -195,8 +195,10 @@ a {
   color: #9C69E2;
 }
 
+/* burger */
 .header-burger {
   display: none;
+  transition: all 0.4s;
 }
 @media screen and (max-width: 768px) {
   .header-burger {
@@ -208,6 +210,7 @@ a {
   top: 0;
   right: 0;
   z-index: 1;
+  transition: all 0.4s;
 }
 
 .mobile-menu {
@@ -216,18 +219,24 @@ a {
   height: 100%;
   right: 0;
   top: 0;
-  display: none;
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 0.4s;
 }
 .mobile-menu .header-nav__item {
   padding: 10px 0;
 }
 
 .header-burger.is-open .mobile-menu {
-  display: flex;
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .burger-btn-open {
