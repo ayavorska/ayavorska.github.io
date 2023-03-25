@@ -26,6 +26,9 @@
   &:hover svg path {
     stroke: $c-white;
   }
+  @include breakpoint("sm") {
+    max-width: 100%;
+  }
 }
 .btn-violet,
 .btn-pink {
