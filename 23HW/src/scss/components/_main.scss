@@ -20,7 +20,7 @@
 /* header */
 
 .header {
-  padding: 18px 0;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   left: 0;
@@ -36,7 +36,7 @@
     display: flex;
   }
   &__logo {
-    margin-right: 120px;
+    margin-right: 100px;
     @include breakpoint("lg") {
       margin-right: 60px;
     }
@@ -64,7 +64,7 @@
     }
   }
   &__link {
-    padding: 10px 20px;
+    padding: 0 20px;
     display: inline-block;
     color: $c-gray;
     font-size: $fs-16;
