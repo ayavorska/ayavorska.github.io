@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17">
+	<title>Google</title>
+	<defs>
+		<image  width="18" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAMAAADnhAzLAAAAAXNSR0IB2cksfwAAAPlQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////69QrlAAAAFN0Uk5TAAhah4hXVBIly0s1zP6OFdItzhrzd+ePBxn/baoLYOqdDPua6wKU/V4K11gEdlvBLgmj7UYDg9BpRIvYD8AG+IZ50wXxxKfsukMiP5arDVWBdTHiYoXHAAAAqklEQVR4nGNgwA4YmZhZWFhYGRjY2KEiHJxc3Dy8fPwMDAKCUCEhFgYGYREeBjZRMXFRCZCIpJQ0kJSRkpVjkVdgYQQJKSrJAEllFVUkjWrqGgyaWtoMSMbr6PLwyOuhO0NfygBVwJDbSMrYBEnA1MzcwtJCTAlJzMraBkjya9nCRezsHcC0oxNcyNnFVRVEu/EhNJq4e3h6efv4aiKZ7+cfwBIYhD2QIAAAGJIP03DVKV4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Google" href="#img1" x="0" y="0"/>
+</svg>

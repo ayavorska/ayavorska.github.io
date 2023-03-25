@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="17" height="17">
+	<title>Dribble</title>
+	<defs>
+		<image  width="17" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAAXNSR0IB2cksfwAAAVZQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////RiHu7wAAAHJ0Uk5TAAJHkbOvgzPQ/MpWXo7ktBlC7mBE+QfjHRvsSJjMAw63zZMR6XFf3otaJBI0af/AO1si+tqqbdZ5I+Uq3RdG9e3mzvQT8wQYveiB8kEL29hD4ZQMqHubbsJn3DUFyOeQD/27lRYn2eqpBgqHsAE9XVkxaEE6fAAAANlJREFUeJxjYMAOGJmYWVjZ2BEC7BycXNw8vHz8AlABQSFhEVGgAjFecQmwgKSUNAODjKwcg7wChyIjSERJBkgoq6iqqWvIcWmCTFXRYtDW0VXU0zdgYDDkB4oY6QkZG5uYmplbADmWVkDC2sbIVo6BwU7W2N7B0ckZKOLi6sbA4O7h6eXtw+Br6Acy2T+AwTowKJghJIiBITQMJBIe4S4eCaS5oxiUPaNBIjGxcfEgOiHRKCkZ4uYUJ/5UEJ2WnpEJ9UZWtgNHRo5NoG4uwq+ZefkFhUh8FAAAilQfUBscvZAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Dribble" href="#img1" x="0" y="0"/>
+</svg>
