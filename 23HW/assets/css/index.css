@@ -155,6 +155,10 @@ a {
   display: flex;
 }
 .header__logo {
+  width: 68px;
+  height: 54px;
+  display: flex;
+  align-items: center;
   margin-right: 100px;
 }
 @media screen and (max-width: 992px) {

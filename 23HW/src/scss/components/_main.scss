@@ -36,6 +36,10 @@
     display: flex;
   }
   &__logo {
+    width: 68px;
+    height: 54px;
+    display: flex;
+    align-items: center;
     margin-right: 100px;
     @include breakpoint("lg") {
       margin-right: 60px;
