@@ -89,6 +89,9 @@
     z-index: 1;
     transition: all 0.4s;
   }
+  .header-nav__link {
+    font-size: $fs-24;
+  }
 }
 .mobile-menu {
   position: fixed;

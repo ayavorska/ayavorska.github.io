@@ -217,6 +217,9 @@ a {
   z-index: 1;
   transition: all 0.4s;
 }
+.header-burger .header-nav__link {
+  font-size: 24px;
+}
 
 .mobile-menu {
   position: fixed;
@@ -412,7 +415,7 @@ a {
 
 /* features */
 .features {
-  padding: 60px 0;
+  padding: 55px 0;
 }
 @media screen and (max-width: 992px) {
   .features {
@@ -423,7 +426,7 @@ a {
   text-align: center;
 }
 .features__title {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 @media screen and (max-width: 992px) {
   .features__title {
