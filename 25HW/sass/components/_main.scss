@@ -1,0 +1,154 @@
+.pricing {
+  background-color: $c-purple;
+  padding: 151px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+  }
+}
+
+.card {
+  background-color: $c-gray-light;
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 40px 0 0;
+  transition: all 0.4s;
+  &__bg {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 64%;
+    background-image: url("../images/card_bg.png");
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+  }
+  &__inner {
+    transition: all 0.4s;
+    position: relative;
+  }
+  &__popular {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    transition: all 0.4s;
+    &:after {
+      content: "";
+      background-image: url("../images/tooltip_bg.png");
+      width: 100px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: -85px;
+      z-index: 10;
+      visibility: hidden;
+      transition: all 0.25s;
+    }
+  }
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  &__heading-price {
+    font-family: "Bebas Neue Thin";
+    font-size: $fs-60;
+    line-height: 60px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    & .small-symbol {
+      font-size: $fs-24;
+      line-height: 28px;
+
+      /*position: absolute;
+      top: 5px;
+      left: 40%;*/
+    }
+    & .small-hour {
+      font-family: "Bebas Neue Thin";
+      font-size: $fs-16;
+      line-height: 16px;
+      /*position: absolute;
+      bottom: 5px;
+      right: 35%;*/
+      align-self: flex-end;
+    }
+  }
+  &__heading-title {
+    font-family: "Bebas Neue Book";
+    font-size: $fs-24;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+  }
+  &__sell-atributes {
+    height: 57px;
+  }
+  &__text-discount {
+    color: $c-gray;
+    font-size: $fs-11;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 20px;
+    visibility: hidden;
+  }
+  &__sell-btn {
+    position: absolute;
+    right: calc(50% - 100px);
+    bottom: -27px;
+    z-index: 2;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    .card__bg {
+      transform: scaleY(0.9);
+    }
+    .card__inner {
+      transform: scale(0.95);
+    }
+    .card__popular {
+      &:after {
+        visibility: visible;
+      }
+    }
+    .card__sell-btn {
+      bottom: 52px;
+    }
+    .card__sell-atributes {
+    }
+    .card__text-discount {
+      visibility: visible;
+    }
+  }
+}
+
+.services {
+  padding: 40px 0 60px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  &__icon {
+    svg {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__item {
+  }
+}
