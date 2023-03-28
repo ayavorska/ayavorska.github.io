@@ -45,6 +45,7 @@
       right: -85px;
       z-index: 10;
       visibility: hidden;
+      opacity: 0;
       transition: all 0.25s;
     }
   }
@@ -106,6 +107,7 @@
 
   &:hover {
     transform: scale(1.1);
+    z-index: 1;
     .card__bg {
       transform: scaleY(0.9);
     }
@@ -115,6 +117,7 @@
     .card__popular {
       &:after {
         visibility: visible;
+        opacity: 1;
       }
     }
     .card__sell-btn {

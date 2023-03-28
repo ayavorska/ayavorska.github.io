@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff");
@@ -12,7 +5,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Bebas Neue Thin";
   src: url("../fonts/BebasNeue-Thin.woff2") format("woff2"), url("../fonts/BebasNeue-Thin.woff") format("woff");
@@ -20,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Bebas Neue Book";
   src: url("../fonts/BebasNeueBook.woff2") format("woff2"), url("../fonts/BebasNeueBook.woff") format("woff");
@@ -28,7 +19,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 .container {
   max-width: 1190px;
   margin: 0 auto;
@@ -41,7 +31,6 @@
 *:after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -71,13 +60,8 @@ a {
   background-color: #9789F9;
   padding: 151px 0;
 }
-
 .pricing__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 45px;
 }
@@ -88,11 +72,8 @@ a {
   max-width: 370px;
   width: 100%;
   padding: 40px 0 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .card__bg {
   position: absolute;
   bottom: 60px;
@@ -102,27 +83,18 @@ a {
   height: 64%;
   background-image: url("../images/card_bg.png");
   background-repeat: no-repeat;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .card__inner {
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   position: relative;
 }
-
 .card__popular {
   position: absolute;
   top: -30px;
   right: 10px;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .card__popular:after {
   content: "";
   background-image: url("../images/tooltip_bg.png");
@@ -133,32 +105,24 @@ a {
   right: -85px;
   z-index: 10;
   visibility: hidden;
-  -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
+  opacity: 0;
   transition: all 0.25s;
 }
-
 .card__heading {
   margin-bottom: 30px;
   text-align: center;
   position: relative;
   z-index: 2;
 }
-
 .card__heading-price {
   font-family: "Bebas Neue Thin";
   font-size: 60px;
   line-height: 60px;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
-
 .card__heading-price .small-symbol {
   font-size: 24px;
   line-height: 28px;
@@ -166,7 +130,6 @@ a {
   top: 5px;
   left: 40%;*/
 }
-
 .card__heading-price .small-hour {
   font-family: "Bebas Neue Thin";
   font-size: 16px;
@@ -174,21 +137,17 @@ a {
   /*position: absolute;
   bottom: 5px;
   right: 35%;*/
-  -ms-flex-item-align: end;
   align-self: flex-end;
 }
-
 .card__heading-title {
   font-family: "Bebas Neue Book";
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.04em;
 }
-
 .card__sell-atributes {
   height: 57px;
 }
-
 .card__text-discount {
   color: #A9A9A9;
   font-size: 11px;
@@ -197,40 +156,29 @@ a {
   padding-top: 20px;
   visibility: hidden;
 }
-
 .card__sell-btn {
   position: absolute;
   right: calc(50% - 100px);
   bottom: -27px;
   z-index: 2;
 }
-
 .card:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  z-index: 1;
 }
-
 .card:hover .card__bg {
-  -webkit-transform: scaleY(0.9);
-  -ms-transform: scaleY(0.9);
   transform: scaleY(0.9);
 }
-
 .card:hover .card__inner {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
   transform: scale(0.95);
 }
-
 .card:hover .card__popular:after {
   visibility: visible;
+  opacity: 1;
 }
-
 .card:hover .card__sell-btn {
   bottom: 52px;
 }
-
 .card:hover .card__text-discount {
   visibility: visible;
 }
@@ -239,51 +187,28 @@ a {
   padding: 40px 0 60px;
   position: relative;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   gap: 40px;
 }
-
 .services__icon svg {
   display: block;
   width: 30px;
   height: 30px;
 }
-
 .services__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: 30px;
 }
-
 .main-btn {
   max-width: 200px;
   width: 100%;
   height: 54px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-family: "Bebas Neue";
   text-transform: uppercase;
@@ -293,11 +218,8 @@ a {
   border-radius: 30px;
   color: #ffffff;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .main-btn:hover {
   background-color: #FD8D7B;
-}
+}/*# sourceMappingURL=index.css.map */
