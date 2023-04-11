@@ -11,11 +11,10 @@ const functionName3 = (parameter1, parameter2) => {
 
 //Створи функцію, яка буде виводити кількість переданих їй аргументів.
 function constNumberArguments(a, b, c) {
-  console.log(arguments);
-  return arguments.length;
+  console.log(arguments.length);
 }
 
-constNumberArguments();
+constNumberArguments(1, 2, 3);
 
 //Напиши функцію, яка приймає 2 числа і повертає :
 // -1, якщо перше число менше, ніж друге;
