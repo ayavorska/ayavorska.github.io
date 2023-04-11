@@ -21,62 +21,61 @@ constNumberArguments();
 // -1, якщо перше число менше, ніж друге;
 // 1 - якщо перше число більше, ніж друге;
 // 0 - якщо числа рівні.
-// function compareNumbers() {
-//   const a = prompt('Введіть перше число');
-//   const b = prompt('Введіть друге число');
+function compareNumbers() {
+  const a = prompt('Введіть перше число');
+  const b = prompt('Введіть друге число');
 
-//   if (a < b) {
-//     return -1;
-//   } else if (a > b) {
-//     return 1;
-//   } else {
-//     return 0;
-//   }
-// }
+  if (a < b) {
+    return -1;
+  } else if (a > b) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
 
-// console.log(compareNumbers());
+console.log(compareNumbers());
 
 // //Напиши функцію, яка обчислює факторіал переданого їй числа.
-// function factorial(n) {
-//   if (n == 0) {
-//     return 1;
-//   } else {
-//     return n * factorial(n - 1);
-//   }
-// }
+function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
 
-// const n = prompt("Введіть число:");
-// const result = factorial(n);
-// console.log(`Факторіал числа ${n} дорівнює ${result}.`);
+const n = prompt("Введіть число:");
+const result = factorial(n);
+console.log(`Факторіал числа ${n} дорівнює ${result}.`);
 
 //Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
 //Наприклад: цифри 1, 4, 9 перетворяться в число 149.
-// function mergeDigits() {
-//   const digit1 = prompt("Введіть першу цифру:");
-//   const digit2 = prompt("Введіть другу цифру:");
-//   const digit3 = prompt("Введіть третю цифру:");
+function mergeDigits() {
+  const digit1 = prompt("Введіть першу цифру:");
+  const digit2 = prompt("Введіть другу цифру:");
+  const digit3 = prompt("Введіть третю цифру:");
 
-//   const merge = digit1 + digit2 + digit3;
-//   return Number(merge);
-// }
+  const merge = digit1 + digit2 + digit3;
+  return Number(merge);
+}
 
-// console.log(mergeDigits());
+console.log(mergeDigits());
 
 //Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
 //Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+function calculateArea() {
+  let figureHeight = Number(prompt("Введіть висоту фігури"));
+  let figureWidth = Number(prompt("Введіть ширину фігури"));
 
-// function calculateArea() {
-//   let figureHeight = Number(prompt("Введіть висоту фігури"));
-//   let figureWidth = Number(prompt("Введіть ширину фігури"));
+  if (isNaN(figureWidth) || figureWidth <= 0) {
+    figureWidth = figureHeight;
+  }
 
-//   if (isNaN(figureWidth) || figureWidth <= 0) {
-//     figureWidth = figureHeight;
-//   }
+  return figureHeight * figureWidth;
+}
 
-//   return figureHeight * figureWidth;
-// }
-
-// console.log("Площа фігури:", calculateArea());
+console.log("Площа фігури:", calculateArea());
 
 // Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”.
 // Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
