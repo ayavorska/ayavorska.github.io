@@ -6,10 +6,10 @@ const sklad = {
     return this.goods.find((good) => good.id === id);
   },
   addGood: function (good) {
-    if (good.id && good.weight && good.weight.kg) {
+    if (!this.goods.find(g => g.id === good.id)) {
       this.goods.push(good);
     } else {
-      console.log("Товару не знайдено.");
+      console.log("Товару вже є.");
     }
   },
   getWeightKg: function () {
