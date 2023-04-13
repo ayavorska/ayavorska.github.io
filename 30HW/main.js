@@ -6,7 +6,11 @@ const sklad = {
     return this.goods.find((good) => good.id === id);
   },
   addGood: function (good) {
-    this.goods.push(good);
+    if (good.id && good.weight && good.weight.kg) {
+      this.goods.push(good);
+    } else {
+      console.log("Товару не знайдено.");
+    }
   },
   getWeightKg: function () {
     let allWeight = 0;
