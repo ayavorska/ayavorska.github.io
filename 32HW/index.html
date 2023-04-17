@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>32HW</title>
+    <style>
+      .task {
+        text-align: center;
+        width: 50%;
+        padding: 50px;
+        margin-bottom: 10px;
+        border: 1px solid #1b67f5;
+      }
+      .playlist__title {
+        color: #0017e2;
+        font-size: 34px;
+        text-transform: uppercase;
+      }
+      .playlist__list li {
+        color: #1b67f5;
+      }
+      .playlist__list li:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+
+      /* Task 2  */
+
+      .modal {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(35, 76, 114, 0.384);
+        display: none;
+      }
+
+      .modal-content {
+        background-color: #ffffff;
+        margin: 20% auto;
+        padding: 20px;
+        border: 1px solid #1b67f5;
+        width: 70%;
+      }
+      .modal-content p {
+        color: #00158a;
+      }
+
+      .btn__open {
+        width: 150px;
+        height: 40px;
+        border: 1px solid #1b67f5;
+        border-radius: 5px;
+        background-color: #1b67f5;
+        color: #ffffff;
+        transition: all 0.4s;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .btn__open:hover,
+      .btn__open:focus {
+        color: #1b67f5;
+        background-color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .close {
+        color: #1165ff;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: all 0.4s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #00158a;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Task 3  */
+
+      .task__tree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .traffic-light {
+        background-color: #0017e2;
+        border-radius: 50px;
+        height: 200px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px;
+      }
+      .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.521);
+        position: relative;
+      }
+      .circle:after {
+        border-right: 4px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+      }
+      .circle.red.active {
+        background-color: #c0392b;
+        box-shadow: 0 0 20px 5px #c0392b;
+      }
+      .circle.yellow.active {
+        background-color: #f1c40f;
+        box-shadow: 0 0 20px 5px #f1c40f;
+      }
+      .circle.green.active {
+        background-color: #2ecc71;
+        box-shadow: 0 0 20px 5px #2ecc71;
+      }
+      .switch-btn {
+        padding: 0 10px;
+        height: 40px;
+        border: 1px solid #0017e2;
+        border-radius: 5px;
+        background-color: #0017e2;
+        color: #ffffff;
+        transition: all 0.4s;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .switch-btn:hover,
+      .switch-btn:focus {
+        color: #0017e2;
+        background-color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task task__one">
+      <h2 class="playlist__title">Playlist</h2>
+      <ol id="playlistList" class="playlist__list"></ol>
+    </div>
+
+    <!-- Task 2 -->
+
+    <div class="task task__two">
+      <button class="btn__open" id="open">Відкрити</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Це модальне вікно з текстом.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="task task__tree">
+      <div class="traffic-light">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <button class="switch-btn" id="switch-btn">Перемкнути світлофор на наступний колір</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
