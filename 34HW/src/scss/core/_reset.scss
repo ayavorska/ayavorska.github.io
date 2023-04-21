@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: $fs-18;
+	font-weight: 500;
+	color: $c-gray;
+	line-height: 29px;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Work Sans', sans-serif;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
