@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HW35</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 168);
+        color: aliceblue;
+        font-family: "Ysabeau", sans-serif;
+      }
+      .search-form {
+        padding: 100px 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .search-form label {
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .search-form input {
+        padding: 6px;
+        height: 18px;
+        width: 308px;
+      }
+      .search-form input,
+      .search-form button {
+        border: 1px solid aliceblue;
+        border-radius: 10px;
+        box-shadow: none;
+        margin-bottom: 10px;
+        outline: none;
+      }
+      .search-form button {
+        width: 320px;
+        height: 30px;
+        transition: all 0.4s;
+        color: rgb(100, 100, 255);
+        font-size: 18px;
+      }
+      .search-form button:hover,
+      .btn-details:hover {
+        color: aliceblue;
+        background-color: rgb(100, 100, 255);
+        border: 1px solid rgb(100, 100, 255);
+      }
+
+      .result,
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+      }
+      .result__element {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .btn-details {
+        width: 200px;
+        height: 30px;
+        transition: all 0.4s;
+        color: rgb(100, 100, 255);
+        font-size: 18px;
+        border: 1px solid aliceblue;
+        border-radius: 10px;
+        box-shadow: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <form class="search-form" id="searchForm">
+        <label for="product-title">Product Title:</label>
+        <input type="text" id="product-title" name="product-title" required />
+        <button type="submit">Search</button>
+      </form>
+      <div class="result"></div>
+      <div class="details"></div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
