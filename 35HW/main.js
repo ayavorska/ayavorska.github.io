@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 function renderProducts(products) {
   const productsListResultEl = document.querySelector(".result");
