@@ -34,7 +34,6 @@ async function initWeather() {
   let weatherData;
 
   const lastUpdated = localStorage.getItem("lastUpdate");
-  lastUpdated.toLocaleString();
   if (lastUpdated) {
     const lastUpdatedDate = new Date(lastUpdated);
     const currentDate = new Date();
