@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: $fs-18;
+	font-weight: 500;
+	line-height: 30px;
+	color: $c-dark-blue;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}

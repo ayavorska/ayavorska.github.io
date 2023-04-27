@@ -1,0 +1,43 @@
+.arrow {
+  border: 1px solid $c-white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  background-color: transparent;
+  svg {
+    height: 6px;
+    width: 9px;
+  }
+  svg path {
+    transition: all 0.4s;
+  }
+}
+
+.main-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: $fs-14;
+  line-height: 17px;
+  text-transform: uppercase;
+  background-color: $c-white;
+  border: 1px solid $c-black;
+  padding: 16px 41px;
+  transition: all 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: $c-dark-blue;
+    color: $c-white;
+  }
+}
+.gallery__btn {
+  padding: 16px 57px;
+}
+.contact__btn {
+  padding: 15px 33px;
+  font-size: $fs-18;
+
+}
