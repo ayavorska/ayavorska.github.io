@@ -116,12 +116,8 @@
 .head {
   padding: 300px 0 50px;
   color: $c-white;
-  background: linear-gradient(
-      243.43deg,
-      rgba(93, 56, 228, 0.8) 16.9%,
-      rgba(75, 147, 255, 0.8) 83.27%
-    ),
-    url("../images/about-bg.jpg");
+  background-image: url("../images/about-bg.png"),
+    linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   width: 100%;
   background-size: cover;
 
@@ -287,7 +283,7 @@
     :focus {
       background: $c-white;
     }
-    :hover svg path ,
+    :hover svg path,
     :focus svg path {
       fill: $c-blue;
     }
@@ -408,7 +404,6 @@
     }
     img {
       transition: all 0.4s;
-
     }
     &:hover img,
     &:focus img {
