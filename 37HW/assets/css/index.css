@@ -105,7 +105,7 @@ a {
   transition: all 0.4s;
 }
 .header--bg {
-  background-color: #55B7FF;
+  background: linear-gradient(243.43deg, #7e5aff 20%, #55b7ff 80%);
 }
 .header__inner {
   display: flex;

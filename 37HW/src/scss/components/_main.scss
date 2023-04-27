@@ -33,7 +33,7 @@
   width: 100%;
   transition: all 0.4s;
   &--bg {
-    background-color: $c-blue;
+    background: linear-gradient(243.43deg, #7e5aff 20%, #55b7ff 80%);
   }
   &__inner {
     display: flex;
