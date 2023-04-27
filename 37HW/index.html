@@ -30,23 +30,23 @@
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
-            <a href="#" class="header__logo-link">
+            <a href="#head" class="header__logo-link">
               <img src="./assets/images/logo.png" alt="Logo icon" />
             </a>
           </div>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#" class="header__link">About us</a>
+                <a href="#head" class="header__link">About us</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">projects</a>
+                <a href="#project" class="header__link">projects</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">news</a>
+                <a href="#news" class="header__link">news</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">contact</a>
+                <a href="#contact" class="header__link">contact</a>
               </li>
             </ul>
           </nav>
@@ -78,7 +78,7 @@
     </header>
 
     <main class="main">
-      <section class="head">
+      <section class="head" id="head">
         <div class="head__inner">
           <div class="head__swiper swiper">
             <div class="head__wrapper swiper-wrapper">
@@ -106,7 +106,7 @@
             <div class="head__pagination swiper-pagination"></div>
           </div>
           <div class="head__arrow">
-            <a href="#" class="arrow">
+            <a href="#project" class="arrow" id="scrollButton">
               <svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8.90479 1.11105C8.9606 1.16685 8.9885 1.23103 8.9885 1.30357C8.9885 1.37612 8.9606 1.44029 8.90479 1.49609L5.00412 5.39676C4.94832 5.45257 4.88415 5.48047 4.8116 5.48047C4.73906 5.48047 4.67488 5.45257 4.61908 5.39676L0.71841 1.49609C0.662606 1.44029 0.634705 1.37612 0.634705 1.30357C0.634705 1.23103 0.662606 1.16685 0.71841 1.11105L1.13694 0.692522C1.19274 0.636718 1.25691 0.608817 1.32946 0.608817C1.402 0.608817 1.46618 0.636718 1.52198 0.692522L4.8116 3.98214L8.10122 0.692522C8.15703 0.636718 8.2212 0.608817 8.29375 0.608817C8.36629 0.608817 8.43046 0.636718 8.48627 0.692522L8.90479 1.11105Z"
@@ -118,7 +118,7 @@
         </div>
       </section>
 
-      <section class="project">
+      <section class="project" id="project">
         <div class="container">
           <h2 class="title-main">WHAT WE DO</h2>
 
@@ -199,7 +199,7 @@
         </div>
       </section>
 
-      <section class="news">
+      <section class="news" id="news">
         <div class="container">
           <h2 class="title-main c-white">LATEST NEWS</h2>
           <div class="news__inner">
@@ -429,7 +429,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="title-main">gallery</h2>
 
@@ -481,7 +481,7 @@
     </main>
 
     <footer class="footer">
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2 class="contact__title title-main">GET IN TOUCH</h2>
         <div class="contact__inner">
           <div class="contact__items">
@@ -573,14 +573,13 @@
               >From 07:05AM to 19:30PM
             </p>
           </div>
-          <form class="contact__form form">
+          <form class="contact__form form" id="form">
             <input
               class="form__input"
               type="text"
               id="name"
               name="name"
               placeholder="Full name"
-              required
             />
             <input
               class="form__input"
@@ -588,7 +587,6 @@
               id="email"
               name="email"
               placeholder="Email"
-              required
             />
             <div class="form__btn">
               <input
@@ -605,7 +603,7 @@
         <div class="footer__inner">
           <div class="footer__credit">
             <div class="footer__logo">
-              <a href="#" class="footer__logo-link">
+              <a href="#head" class="footer__logo-link">
                 <img src="./assets/images/logo.png" alt="Logo icon" />
               </a>
             </div>

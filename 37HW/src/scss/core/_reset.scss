@@ -5,6 +5,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-padding-top: 127px;
+
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: $fs-18;

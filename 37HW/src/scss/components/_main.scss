@@ -25,12 +25,16 @@
 // header
 
 .header {
-  padding: 53px 0 0;
+  padding: 53px 0 20px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 402;
   width: 100%;
+  transition: all 0.4s;
+  &--bg {
+    background-color: $c-blue;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -46,11 +50,21 @@
     gap: 93px;
   }
   &__item {
+    display: block;
+  }
+  &__link {
     position: relative;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $c-white;
+    font-size: $fs-14;
+    line-height: 18px;
+    text-transform: uppercase;
+    transition: all 0.4s;
     &:before {
       content: "";
       position: absolute;
-      top: 12px;
+      top: 4px;
       left: -23px;
       width: 9px;
       height: 9px;
@@ -58,17 +72,10 @@
       border: 1px solid $c-white;
       transition: all 0.4s;
     }
-    &:hover:before {
+    &:hover:before,
+    &:focus:before {
       background-color: $c-white;
     }
-  }
-  &__link {
-    font-family: "Source Sans Pro", sans-serif;
-    color: $c-white;
-    font-size: $fs-14;
-    line-height: 18px;
-    text-transform: uppercase;
-    transition: all 0.4s;
   }
   &__social {
   }
@@ -379,10 +386,39 @@
     margin-bottom: 61px;
   }
   &__link {
-    
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 18px);
+      top: calc(50% - 18px);
+      display: block;
+      background-image: url("../images/gallery/bi_zoom-in.svg");
+      background-size: cover;
+      width: 36px;
+      height: 36px;
+      opacity: 0;
+      transition: all 0.4s;
+    }
+    img {
+      transition: all 0.4s;
+
+    }
+    &:hover img {
+      filter: brightness(0.8);
+    }
+    &:hover:after {
+      opacity: 1;
+    }
     &:first-of-type {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
+      &:after {
+        left: calc(50% - 35px);
+        top: calc(50% - 35px);
+        width: 70px;
+        height: 70px;
+      }
     }
   }
 }
@@ -435,6 +471,7 @@
   &__link {
     margin-bottom: 26px;
     display: inline-block;
+    color: $c-black;
     svg {
       height: 16px;
       fill: $c-violet;
@@ -447,11 +484,20 @@
   &__input {
     border: none;
     width: 100%;
-    border-bottom: 1px solid $c-black;
+    border-bottom: 1px solid #2c405879;
     margin-bottom: 30px;
     padding-bottom: 16px;
     font-family: "Montserrat", sans-serif;
     font-size: $fs-18;
+    outline: none;
+    &:focus {
+      color: $c-black;
+      border-bottom: 1px solid $c-dark-blue;
+    }
+  }
+  .error {
+    border-color: red;
+    color: red;
   }
   &__btn {
     width: 100%;
@@ -474,6 +520,14 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+  }
+  &__logo {
+    margin-bottom: 42px;
+  }
+  &__copyright {
+    font-size: $fs-14;
+    line-height: 17px;
+    color: $c-white;
   }
   &__social {
     padding-top: 6px;
