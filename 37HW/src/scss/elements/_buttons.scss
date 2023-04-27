@@ -28,7 +28,8 @@
   padding: 16px 41px;
   transition: all 0.4s;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $c-dark-blue;
     color: $c-white;
   }

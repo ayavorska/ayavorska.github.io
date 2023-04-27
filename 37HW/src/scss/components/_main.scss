@@ -101,10 +101,12 @@
       transition: all 0.4s;
     }
   }
-  :hover {
+  :hover,
+  :focus {
     background: $c-white;
   }
-  :hover svg path {
+  :hover svg path,
+  :focus svg path {
     fill: $c-violet;
   }
 }
@@ -169,10 +171,12 @@
     text-transform: uppercase;
   }
   &__arrow {
-    :hover {
+    :hover,
+    :focus {
       background: $c-white;
     }
-    :hover svg path {
+    :hover svg path,
+    :focus svg path {
       fill: $c-violet;
     }
   }
@@ -279,10 +283,12 @@
   }
   &__arrow {
     position: relative;
-    :hover {
+    :hover,
+    :focus {
       background: $c-white;
     }
-    :hover svg path {
+    :hover svg path ,
+    :focus svg path {
       fill: $c-blue;
     }
   }
@@ -404,10 +410,12 @@
       transition: all 0.4s;
 
     }
-    &:hover img {
+    &:hover img,
+    &:focus img {
       filter: brightness(0.8);
     }
-    &:hover:after {
+    &:hover:after,
+    &:focus:after {
       opacity: 1;
     }
     &:first-of-type {
