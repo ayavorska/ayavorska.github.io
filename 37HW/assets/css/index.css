@@ -115,9 +115,19 @@ a {
 .header__nav {
   padding-left: 58px;
 }
+@media screen and (max-width: 1190px) {
+  .header__nav {
+    padding-left: 0;
+  }
+}
 .header__list {
   display: flex;
   gap: 93px;
+}
+@media screen and (max-width: 1190px) {
+  .header__list {
+    gap: 40px;
+  }
 }
 .header__item {
   display: block;
@@ -202,6 +212,11 @@ a {
   top: 31%;
   right: 52px;
 }
+@media screen and (max-width: 1190px) {
+  .head .swiper-pagination {
+    right: 0;
+  }
+}
 .head .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -247,10 +262,21 @@ a {
 }
 .project__item {
   display: flex;
+  justify-content: space-between;
   gap: 70px;
 }
 .project__item:last-of-type {
   gap: 64px;
+}
+@media screen and (max-width: 1600px) {
+  .project__item:last-of-type {
+    gap: 124px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .project__item {
+    gap: 134px;
+  }
 }
 .project__img .img-front {
   position: relative;
@@ -260,6 +286,25 @@ a {
   min-width: 630px;
   min-height: 470px;
 }
+@media screen and (max-width: 1600px) {
+  .project__img .img-front img {
+    min-width: 0;
+    min-height: 0;
+    max-width: 520px;
+    min-height: 380px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .project__img .img-front img {
+    max-width: 410px;
+    min-height: 270px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .project__img .img-front {
+    left: 60px;
+  }
+}
 .project__img .img-back {
   position: absolute;
   left: 107px;
@@ -267,6 +312,23 @@ a {
 .project__img .img-back img {
   width: 630px;
   max-height: 470px;
+}
+@media screen and (max-width: 1600px) {
+  .project__img .img-back img {
+    width: 520px;
+    max-height: 380px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .project__img .img-back img {
+    max-width: 410px;
+    min-height: 270px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .project__img .img-back {
+    left: 0;
+  }
 }
 .project__img .img-front-right {
   position: relative;
@@ -276,6 +338,25 @@ a {
   min-width: 630px;
   min-height: 470px;
 }
+@media screen and (max-width: 1600px) {
+  .project__img .img-front-right img {
+    min-width: 0;
+    min-height: 0;
+    max-width: 520px;
+    min-height: 380px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .project__img .img-front-right img {
+    max-width: 410px;
+    min-height: 270px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .project__img .img-front-right {
+    right: 60px;
+  }
+}
 .project__img .img-back-right {
   position: absolute;
   right: 107px;
@@ -284,8 +365,35 @@ a {
   width: 630px;
   max-height: 470px;
 }
+@media screen and (max-width: 1600px) {
+  .project__img .img-back-right img {
+    width: 520px;
+    max-height: 380px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .project__img .img-back-right img {
+    max-width: 410px;
+    min-height: 270px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .project__img .img-back-right {
+    right: 0;
+  }
+}
 .project__content {
   padding-top: 150px;
+}
+@media screen and (max-width: 1600px) {
+  .project__content {
+    padding-top: 90px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .project__content {
+    padding-top: 30px;
+  }
 }
 .project__subtitle {
   font-weight: 400;
@@ -340,6 +448,11 @@ a {
 .news__arrow :focus svg path {
   fill: #55B7FF;
 }
+@media screen and (max-width: 1600px) {
+  .news__arrow {
+    display: none;
+  }
+}
 .news .--left {
   cursor: pointer;
   rotate: 90deg;
@@ -383,6 +496,13 @@ a {
   background-color: #ffffff;
   padding: 30px 20px;
 }
+@media screen and (max-width: 1190px) {
+  .news__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .news__title {
   font-weight: 700;
   font-size: 22px;
@@ -390,10 +510,21 @@ a {
   margin-bottom: 12px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1190px) {
+  .news__title {
+    font-size: 20px;
+  }
+}
 .news__text {
   font-family: "Open Sans", sans-serif;
   line-height: 25px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1190px) {
+  .news__text {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
 }
 .news__author {
   display: flex;
@@ -409,6 +540,11 @@ a {
 .author__name {
   line-height: 22px;
   margin-bottom: 6px;
+}
+@media screen and (max-width: 1190px) {
+  .author__name {
+    font-size: 15px;
+  }
 }
 .author__data {
   font-size: 14px;

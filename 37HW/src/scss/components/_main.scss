@@ -44,10 +44,16 @@
   }
   &__nav {
     padding-left: 58px;
+    @include breakpoint("xl") {
+      padding-left: 0;
+    }
   }
   &__list {
     display: flex;
     gap: 93px;
+    @include breakpoint("xl") {
+      gap: 40px;
+    }
   }
   &__item {
     display: block;
@@ -139,6 +145,9 @@
   .swiper-pagination {
     top: 31%;
     right: 52px;
+    @include breakpoint("xl") {
+      right: 0;
+    }
   }
   .swiper-pagination-bullet {
     width: 10px;
@@ -189,9 +198,16 @@
   }
   &__item {
     display: flex;
+    justify-content: space-between;
     gap: 70px;
     &:last-of-type {
       gap: 64px;
+      @include breakpoint("2xl") {
+        gap: 124px;
+      }
+    }
+    @include breakpoint("2xl") {
+      gap: 134px;
     }
   }
   &__img {
@@ -201,6 +217,19 @@
       img {
         min-width: 630px;
         min-height: 470px;
+        @include breakpoint("2xl") {
+          min-width: 0;
+          min-height: 0;
+          max-width: 520px;
+          min-height: 380px;
+        }
+        @include breakpoint("xl") {
+          max-width: 410px;
+          min-height: 270px;
+        }
+      }
+      @include breakpoint("2xl") {
+        left: 60px;
       }
     }
     .img-back {
@@ -209,6 +238,17 @@
       img {
         width: 630px;
         max-height: 470px;
+        @include breakpoint("2xl") {
+          width: 520px;
+          max-height: 380px;
+        }
+        @include breakpoint("xl") {
+          max-width: 410px;
+          min-height: 270px;
+        }
+      }
+      @include breakpoint("2xl") {
+        left: 0;
       }
     }
     .img-front-right {
@@ -217,6 +257,19 @@
       img {
         min-width: 630px;
         min-height: 470px;
+        @include breakpoint("2xl") {
+          min-width: 0;
+          min-height: 0;
+          max-width: 520px;
+          min-height: 380px;
+        }
+        @include breakpoint("xl") {
+          max-width: 410px;
+          min-height: 270px;
+        }
+      }
+      @include breakpoint("2xl") {
+        right: 60px;
       }
     }
     .img-back-right {
@@ -225,11 +278,28 @@
       img {
         width: 630px;
         max-height: 470px;
+        @include breakpoint("2xl") {
+          width: 520px;
+          max-height: 380px;
+        }
+        @include breakpoint("xl") {
+          max-width: 410px;
+          min-height: 270px;
+        }
+      }
+      @include breakpoint("2xl") {
+        right: 0;
       }
     }
   }
   &__content {
     padding-top: 150px;
+    @include breakpoint("2xl") {
+      padding-top: 90px;
+    }
+    @include breakpoint("xl") {
+      padding-top: 30px;
+    }
   }
   &__subtitle {
     font-weight: 400;
@@ -287,6 +357,9 @@
     :focus svg path {
       fill: $c-blue;
     }
+    @include breakpoint("2xl") {
+      display: none;
+    }
   }
   .--left {
     cursor: pointer;
@@ -332,6 +405,11 @@
     height: 274px;
     background-color: $c-white;
     padding: 30px 20px;
+    @include breakpoint("xl") {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   &__title {
     font-weight: 700;
@@ -339,11 +417,18 @@
     line-height: 27px;
     margin-bottom: 12px;
     text-transform: uppercase;
+    @include breakpoint("xl") {
+      font-size: $fs-20;
+    }
   }
   &__text {
     font-family: "Open Sans", sans-serif;
     line-height: 25px;
     margin-bottom: 40px;
+    @include breakpoint("xl") {
+      font-size: $fs-15;
+      margin-bottom: 0;
+    }
   }
   &__author {
     display: flex;
@@ -362,6 +447,9 @@
   &__name {
     line-height: 22px;
     margin-bottom: 6px;
+    @include breakpoint("xl") {
+      font-size: $fs-15;
+    }
   }
   &__data {
     font-size: $fs-14;
