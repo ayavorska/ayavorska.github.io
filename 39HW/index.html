@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>39HW</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="clock-container is-flex is-flex-direction-column is-align-items-flex-start">
+          <h1 class="title">Дашборд годинників для різних куточків світу:</h1>
+          <form id="add-clock-form">
+            <label class="subtitle block" for="clock-name">Додати новий годинник для часового поясу:</label>
+            <input
+            class="input block"
+              type="text"
+              id="clock-name"
+              required
+            />
+            <button id="add-clock" class="button is-info is-outlined" type="submit">Додати годинник</button>
+          </form>
+        </div>
+        <div id="result-clock"></div>
+
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
