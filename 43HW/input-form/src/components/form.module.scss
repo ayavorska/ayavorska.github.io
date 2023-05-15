@@ -1,0 +1,146 @@
+@import "../scss/themes/index";
+
+.form {
+  padding: 100px 0 200px;
+  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+}
+.formBody {
+  max-width: 680px;
+  margin: 0 auto;
+  background: $c-white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  padding: 57px 65px;
+}
+.formTitle {
+  font-size: $fs-24;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.formFull {
+  margin-bottom: 37px;
+}
+.formCol {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 30px) / 2);
+}
+.formLabel {
+  font-size: $fs-16;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.formSelect {
+    width: 100%!important;
+    outline: none!important;
+    border: none!important;
+    background: $c-light-gray!important;
+    box-shadow: inset 0 1px 3px 0 $bsh-c-input!important;
+    border-radius: 5px!important;
+    line-height: 50px!important;
+}
+.birthday {
+  position: relative;
+}
+// .formIcon {
+//     position: absolute;
+//     background-image: url(../../public/images/calendar-days-svgrepo-com.svg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     top: calc(50% - 9px);
+//     right: 18px;
+//     width: 20px;
+//     height: 18px;
+
+// }
+.formInput {
+  outline: none;
+  border: none;
+  line-height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: $fs-16;
+  background: $c-light-gray;
+  box-shadow: inset 0 1px 3px 0 $bsh-c-input;
+}
+input[type="date"] {
+  color: $c-gray;
+  font-family: "Poppins", sans-serif;
+  font-size: $fs-14;
+}
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  font-size: $fs-16;
+  color: $c-gray;
+}
+.formGender {
+  padding-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+.radioContainer {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: $fs-16;
+  user-select: none;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: $c-middle-gray;
+  border-radius: 50%;
+
+  box-shadow: inset 0 1px 3px 0 $bsh-c-input;
+}
+.radioContainer .checkmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $c-green;
+}
+.radioContainer input:checked ~ .checkmark {
+  background-color: $c-middle-gray;
+}
+.radioContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.formBtn {
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 50px;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: $fs-18;
+  color: $c-white;
+  background: $c-blue-hover;
+  border: 1px solid $c-blue-hover;
+  &:hover {
+    background-color: $c-blue;
+  }
+}
