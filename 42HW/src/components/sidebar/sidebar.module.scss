@@ -1,0 +1,28 @@
+@import "../../scss/themes/index";
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  background-color: $c-violet;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidebarItem {
+}
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $c-white;
+  text-transform: uppercase;
+  &:hover {
+    color: $c-gray;
+  }
+}

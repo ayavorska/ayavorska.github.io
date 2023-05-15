@@ -1,0 +1,34 @@
+@import "../../scss/themes/index";
+
+.orders {
+    padding-bottom: 80px;
+}
+.ordersTitle {
+    text-align: center;
+    font-size: $fs-40;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 30px;
+}
+.ordersBody {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: $c-violet-light;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.order {
+    display: flex;
+    justify-content: space-between;
+}
+.orderContent {
+    display: flex;
+    gap: 10px;
+}
+.orderIcon img {
+    width: 50px;
+    border-radius: 30px;
+}
