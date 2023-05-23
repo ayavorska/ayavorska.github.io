@@ -1,0 +1,23 @@
+@import "../../scss/themes/index";
+
+.search {
+    background-color: $c-gray-d;
+    padding: 50px 0;
+}
+.searchInner {
+    background-color: $c-gray-m;
+    padding: 40px;
+    border-radius: 10px;
+}
+.searchTitle {
+    margin-bottom: 40px;
+    font-size: $fs-28;
+}
+.searchBody {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 20px;
+    row-gap: 30px;
+    grid-template-rows: auto;
+    justify-items: center;
+}

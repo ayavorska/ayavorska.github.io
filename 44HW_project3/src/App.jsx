@@ -1,12 +1,20 @@
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import { Header } from "./components/header/Header";
-import { Search } from "./components/search/Search";
+import Search from "./pages/search/Search";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <Search/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="search" element={<Search />} />
+        </Routes>
       </main>
     </>
   );

@@ -1,0 +1,33 @@
+@import "../../scss/themes/index";
+.cardItem {
+    height: 100%;
+}
+.cardImg {
+    max-height: 400px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.cardTitleLink {
+    display: block;
+    color: $c-white;
+    transition: all .4s;
+    margin-bottom: 8px;
+    &:hover {
+        color: $c-orange;
+    }
+}
+.cardContent {
+    display: flex;
+    gap: 8px;
+    
+}
+.cardContent, .cardGenre {
+    color: $c-main-text;
+    font-size: $fs-14;
+}
+.cardAverage {
+    border-radius: 5px;
+    padding: 0 4px;
+    background-color: $c-orange;
+    color: $c-gray-m;
+}
