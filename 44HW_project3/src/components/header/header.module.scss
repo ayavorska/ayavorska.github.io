@@ -1,0 +1,21 @@
+@import "../../scss/themes/index";
+
+.header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: $c-gray-d;
+  border-bottom: 1px solid $c-gray-m;
+}
+.headerLogo {
+    color: $c-white;
+    text-transform: uppercase;
+    font-size: $fs-22;
+    transition: all .4s;
+    &:hover {
+        color: $c-orange;
+    }
+}
