@@ -2,6 +2,9 @@
 .cardItem {
     height: 100%;
 }
+.cardImgLink {
+    display: block;
+}
 .cardImg {
     max-height: 400px;
     height: 100%;
@@ -19,7 +22,7 @@
 .cardContent {
     display: flex;
     gap: 8px;
-    
+    margin-bottom: 8px;
 }
 .cardContent, .cardGenre {
     color: $c-main-text;

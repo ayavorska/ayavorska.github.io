@@ -5,6 +5,7 @@ import {
 import { Header } from "./components/header/Header";
 import Search from "./pages/search/Search";
 import Home from "./pages/home/Home";
+import MovieDetails from "./pages/movie-details/MovieDetails";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="search" element={<Search />} />
+          <Route path="movie/:movieId" element={<MovieDetails />} />
         </Routes>
       </main>
     </>
