@@ -34,7 +34,7 @@ export default function RecommendedMovies({ movieId }) {
           <Swiper
             modules={[Autoplay]}
             spaceBetween={20}
-            slidesPerView={3}
+            slidesPerView={4}
             autoplay={{ delay: 5500 }}
           >
             {resultItems.map((item) => (

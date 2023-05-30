@@ -2,6 +2,7 @@
 
 .search {
     background-color: $c-gray-d;
+    min-height: calc(100vh - 84px);
     padding: 50px 0;
 }
 .searchInner {
