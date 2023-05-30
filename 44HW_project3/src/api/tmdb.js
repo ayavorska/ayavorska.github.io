@@ -128,6 +128,29 @@ export async function getMovieDetails({ movieId }) {
   }
 }
 
+export async function getMovieRecommendations({ movieId }) {
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${API_KEY}`,
+    },
+  };
+  const params = new URLSearchParams({
+    language: "en",
+  });
+  try {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/movie/${movieId}/recommendations?${params}`,
+      options
+    );
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 export async function getGenres() {
   const options = {
     method: "GET",

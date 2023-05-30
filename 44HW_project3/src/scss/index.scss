@@ -1,42 +1,45 @@
-// reset 
+// reset
 @import "./themes/index";
-
 
 *,
 *:before,
 *:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 83px;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-	font-size: $fs-18;
-	font-weight: 500;
-	color: $c-white;
-	line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: $fs-18;
+  font-weight: 500;
+  color: $c-white;
+  line-height: 24px;
 }
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Wix Madefor Display', sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 img {
-	vertical-align: top;
-	max-width: 100%;
+  vertical-align: top;
+  max-width: 100%;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .container {
-    max-width: 1190px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 10px;
+  max-width: 1190px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
 }
+

@@ -19,6 +19,7 @@ export const MovieCard = ({ item, genres }) => {
           alt="movie poster"
         />
       </Link>
+
       <Link className={styles.cardTitleLink} to={`/movie/${item.id}`}>
         <p className={styles.cardTitle}>{item.title}</p>
       </Link>

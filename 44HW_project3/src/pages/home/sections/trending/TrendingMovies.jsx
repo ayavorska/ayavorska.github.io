@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import { MovieCard } from "../../../../components/card/MovieCard";
 import { getTrendingMovies } from "../../../../api/tmdb";
+import { Loader } from "../../../../components/loader/Loader";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -12,10 +13,12 @@ import styles from "./trendingMovies.module.scss";
 
 export default function TrendingMovies() {
   const [resultItems, setResultItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchTrendingMov = useCallback(async () => {
     const res = await getTrendingMovies();
     setResultItems(res.results);
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -29,6 +32,7 @@ export default function TrendingMovies() {
           <p href="#" className={`${styles.trendingMoviesTitle} ${styles.mainTitle}`}>
             Trending:
           </p>
+          {isLoading && <Loader />}
           <Swiper modules={[Autoplay]} spaceBetween={20} slidesPerView={6} autoplay={{delay: 5500}}>
             {resultItems.map((item) => (
               <SwiperSlide key={item.id}>
