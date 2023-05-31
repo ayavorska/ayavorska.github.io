@@ -1,11 +1,15 @@
+@import '../core/index';
+
 :root {
   --c-main-text: #848692;
   --c-main-bg: #141415;
   --c-accent: #f8c317;
   --c-card-bg: #18181a;
-  --c-white: #ffffff;
+  --c-white-text: #fff8f8;
+  --c-white: #ffff;
   --c-black: #0e0f0f;
   --c-gray-l: #1b1c1e;
+  --c-movie-bg: #18181a9f;
 }
 
 $fs-12: 12px;
@@ -19,8 +23,24 @@ $fs-40: 40px;
 $fs-60: 60px;
 $fs-80: 80px;
 
+.light {
+  --c-main-text: #0e0f0f;
+  --c-main-bg: #f1f1f1;
+  --c-card-bg: #ffffff;
+  --c-white-text: #0e0f0f;
+  --c-movie-bg: #cacaca9f;
+  --c-gray-l: #f1f1f1;
+}
 
 .mainTitle {
   margin-bottom: 40px;
   font-size: $fs-28;
+  color: var(--c-main-text);
+  @include breakpoint("lg") {
+    text-align: center;
+  }
+  @include breakpoint("lg") {
+  font-size: $fs-22;
+    margin-bottom: 20px;
+  }
 }

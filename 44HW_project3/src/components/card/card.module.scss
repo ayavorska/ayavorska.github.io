@@ -1,6 +1,9 @@
 @import "../../scss/themes/index";
+@import "../../scss/core/index";
+
 .cardItem {
   height: 100%;
+  
 }
 .cardImgLink {
   display: block;
@@ -11,11 +14,14 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.contentSection {
+  color: var(--c-white-text);
 
+}
 .cardTitleLink {
   display: block;
-  color: var(--c-white);
   transition: all 0.4s;
+  color: var(--c-white-text);
   margin-bottom: 8px;
   &:hover {
     color: var(--c-accent);
@@ -26,6 +32,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
 .cardContent {
   display: flex;

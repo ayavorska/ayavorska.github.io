@@ -9,6 +9,7 @@ import styles from "./search.module.scss";
 
 export default function Search() {
   let [searchParams] = useSearchParams();
+  const title = searchParams.get("query");
 
   const [resultItems, setResultItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -16,11 +17,10 @@ export default function Search() {
   const [genres, setGenres] = useState([]);
 
   const fetchSearchRes = useCallback(async () => {
-    const title = searchParams.get("query");
     const res = await getSearchResult({ title: title });
     -setResultItems(res.results);
     setIsLoading(false);
-  }, [searchParams]);
+  }, [title]);
 
   const fetchGenre = async () => {
     const res = await getGenres();
@@ -41,7 +41,7 @@ export default function Search() {
       <div className="container">
         <div className={styles.searchInner}>
           <p href="#" className={`${styles.searchTitle} ${styles.mainTitle}`}>
-            Search results:
+            Search results: {title}
           </p>
           {isLoading && <Loader />}
           {resultItems.length === 0 && !isLoading && (

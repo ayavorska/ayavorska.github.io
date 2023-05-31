@@ -36,6 +36,30 @@ export default function RecommendedMovies({ movieId }) {
             spaceBetween={20}
             slidesPerView={4}
             autoplay={{ delay: 5500 }}
+            breakpoints={{
+              220: {
+                slidesPerView: 1,
+              },
+              320: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 2,
+              },
+              640: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              992: {
+                slidesPerView: 4,
+              },
+              1190: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {resultItems.map((item) => (
               <SwiperSlide key={item.id}>

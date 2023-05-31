@@ -1,12 +1,15 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Switch } from "@headlessui/react";
 import { Link, useNavigate, useSearchParams, NavLink } from "react-router-dom";
+
+import { ThemeContext } from "../../providers/ThemeProvider";
 
 import styles from "./header.module.scss";
 
 export function Header() {
-  const [enabled, setEnabled] = useState(false);
+  const { toggleTheme, theme } = useContext(ThemeContext);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   let [searchParams] = useSearchParams();
   let navigate = useNavigate();
@@ -19,11 +22,16 @@ export function Header() {
   const onSubmit = async (data) => {
     if (data.title) {
       navigate(`/search?query=${data.title}`);
+      setIsFormOpen(false);
     }
   };
 
   const handleNavigate = () => {
     reset({ title: "" });
+  };
+
+  const handleFormToggle = () => {
+    setIsFormOpen(!isFormOpen);
   };
 
   return (
@@ -45,19 +53,33 @@ export function Header() {
 
           <div className={styles.headerRightSide}>
             <Switch
-              checked={enabled}
-              onChange={setEnabled}
-              className={`${enabled ? styles.toggleDark : styles.toggleLight} ${
+              checked={!theme}
+              onChange={toggleTheme}
+              className={`${!theme ? styles.toggleDark : styles.toggleLight} ${
                 styles.toggle
               }`}
             >
               <span
                 className={`${
-                  enabled ? styles.toggleCircleOn : styles.toggleCircleOff
+                  !theme ? styles.toggleCircleOn : styles.toggleCircleOff
                 } ${styles.toggleCircle}`}
               />
             </Switch>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <button className={styles.headerBurger} onClick={handleFormToggle}>
+              <div
+                className={`${styles.burgerIcon} ${
+                  isFormOpen ? styles.open : ""
+                }`}
+              >
+                <span className={styles.bar} />
+                <span className={styles.bar} />
+                <span className={styles.bar} />
+              </div>
+            </button>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className={`${styles.headerForm} ${isFormOpen ? "open" : ""}`}
+            >
               <input
                 id="title"
                 className={styles.headerInput}
@@ -65,7 +87,6 @@ export function Header() {
                 placeholder="Search for a movie.."
                 {...register("title")}
               />
-
               <button type="submit" className={styles.headerBtn}>
                 Show results
               </button>

@@ -25,7 +25,7 @@ export default function MovieDetails() {
   const fetchMovieDetails = useCallback(async () => {
     const res = await getMovieDetails({ movieId: movieId });
     setMovieDetails(res);
-    setIsLoading(false)
+    setIsLoading(false);
   }, [movieId]);
 
   useEffect(() => {
@@ -35,45 +35,49 @@ export default function MovieDetails() {
   return (
     movieDetails && (
       <section className={styles.movieDetails}>
-          {isLoading && <Loader />}
+        {isLoading && <Loader />}
         <img
           className={styles.movieDetailsBgImg}
           src={`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`}
           alt="Movie background"
         />
-        <div className="container">
-          <div className={styles.movieDetailsInner}>
-            <div className={styles.contentSection}>
-              <img
-                className={styles.posterImg}
-                src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`}
-                alt="Movie poster"
-              />
-            </div>
-            <div className={`${styles.contentSection} ${styles.flex_gap}`}>
-              <div className={styles.contentSectionBg}>
-                <p className={styles.movieTitle}>{movieDetails.title}</p>
-                <div className={styles.movieInfo}>
-                  <p
-                    className={`${styles.movieReleaseDate} ${styles.bg_orange}`}
-                  >
-                    {movieDetails.release_date}
-                  </p>
-                  <p className={`${styles.movieGenre} ${styles.bg_orange}`}>
-                    {genresList}
-                  </p>
-                  <p className={`${styles.movieTime} ${styles.bg_orange}`}>
-                    {changeMinToHour(movieDetails.runtime)}
-                  </p>
-                  <p className={`${styles.movieData} ${styles.bg_orange}`}>
-                    {movieDetails.vote_average.toFixed(2)}
+        <div className={styles.movieDetailsBody}>
+          <div className="container">
+            <div className={styles.movieDetailsInner}>
+              <div className={styles.contentSectionImg}>
+                <img
+                  className={styles.posterImg}
+                  src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`}
+                  alt="Movie poster"
+                />
+              </div>
+              <div className={`${styles.contentSection} ${styles.flex_gap}`}>
+                <div className={styles.contentSectionBg}>
+                  <p className={styles.movieTitle}>{movieDetails.title}</p>
+                  <div className={styles.movieInfo}>
+                    <p
+                      className={`${styles.movieReleaseDate} ${styles.bg_orange}`}
+                    >
+                      {movieDetails.release_date}
+                    </p>
+                    <p className={`${styles.movieGenre} ${styles.bg_orange}`}>
+                      {genresList}
+                    </p>
+                    <p className={`${styles.movieTime} ${styles.bg_orange}`}>
+                      {changeMinToHour(movieDetails.runtime)}
+                    </p>
+                    <p className={`${styles.movieData} ${styles.bg_orange}`}>
+                      {movieDetails.vote_average.toFixed(2)}
+                    </p>
+                  </div>
+                  <p className={styles.movieTagline}>{movieDetails.tagline}</p>
+                  <p className={styles.movieOverview}>
+                    {movieDetails.overview}
                   </p>
                 </div>
-                <p className={styles.movieTagline}>{movieDetails.tagline}</p>
-                <p className={styles.movieOverview}>{movieDetails.overview}</p>
-              </div>
-              <div className={styles.contentSectionBg}>
-                <RecommendedMovies movieId={movieId} />
+                <div className={styles.contentSectionBg}>
+                  <RecommendedMovies movieId={movieId} />
+                </div>
               </div>
             </div>
           </div>

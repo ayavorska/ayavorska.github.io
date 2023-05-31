@@ -1,10 +1,24 @@
 @import "../../../../scss/themes/index";
+@import "../../../../scss/core/index";
 
 .nowPlayingMovies {
   margin-bottom: 40px;
+  @include breakpoint("sm") {
+    margin-bottom: 20px;
+
+  }
 }
 .nowPlayingMoviesInner {
   background-color: var(--c-card-bg);
   padding: 40px;
   border-radius: 10px;
+  @include breakpoint("sm") {
+    padding: 12px;
+
+  }
 }
+.swiper-initialized {
+  @include breakpoint("lg") {
+    
+  }
+} 

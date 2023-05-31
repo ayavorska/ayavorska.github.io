@@ -1,14 +1,18 @@
 @import "../../scss/themes/index";
+@import "../../scss/core/index";
 
 .header {
   padding: 20px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   width: 100%;
   background-color: var(--c-main-bg);
   border-bottom: 1px solid var(--c-card-bg);
+  @include breakpoint("sm") {
+    padding: 10px 0;
+  }
 }
 .headerInner {
   display: flex;
@@ -16,7 +20,7 @@
   align-items: center;
 }
 .headerLogo {
-  color: var(--c-white);
+  color: var(--c-white-text);
   text-transform: uppercase;
   font-size: $fs-22;
   transition: all 0.4s;
@@ -25,7 +29,7 @@
   }
 }
 .headerLink {
-  color: var(--c-white);
+  color: var(--c-white-text);
   text-transform: uppercase;
   font-size: $fs-16;
   transition: all 0.4s;
@@ -34,17 +38,93 @@
   }
   &:global(.active) {
     color: var(--c-accent);
-
   }
-} 
+}
 .headerRightSide {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
+// form
+
+.headerForm {
+  display: block;
+  @include breakpoint("lg") {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-movie-bg);
+    backdrop-filter: blur(5px);
+    padding-top: 40px;
+    top: 83px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s;
+    &:global(.open) {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @include breakpoint("sm") {
+    top: 63px;
+
+  }
+}
+
+.open {
+  display: flex;
+  @include breakpoint("lg") {
+    display: none;
+  }
+}
+
+.headerBurger {
+  visibility: hidden;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @include breakpoint("lg") {
+    visibility: visible;
+  }
+}
+
+.burgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 32px;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--c-white-text);
+  transition: transform 0.4s ease-in-out;
+}
+
+.open .bar:first-child {
+  transform: translateY(15px) rotate(45deg);
+}
+.open .bar:nth-child(2) {
+  display: none;
+}
+.open .bar:last-child {
+  transform: translateY(-15px) rotate(-45deg);
+}
+
 .headerInput {
   padding: 12px 16px;
-  border: 1px solid var(--c-white);
+  border: 1px solid var(--c-white-text);
   border-radius: 10px;
   text-decoration: none;
   &:focus {
@@ -55,10 +135,13 @@
     font-size: $fs-14;
     color: var(--c-accent);
   }
+  @include breakpoint("lg") {
+    width: 80%;
+  }
 }
 .headerBtn {
   padding: 12px 16px;
-  border: 1px solid var(--c-white);
+  border: 1px solid var(--c-white-text);
   background-color: var(--c-white);
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -72,12 +155,16 @@
   &:active {
     color: var(--c-accent);
   }
+  @include breakpoint("lg") {
+    margin-left: 0;
+    width: 80%;
+  }
 }
 
 // toggle
 
 .toggle {
-  height: 25px;
+  height: 27px;
   width: 60px;
   border-radius: 10px;
   border: none;
@@ -87,6 +174,7 @@
 }
 .toggleLight {
   background-color: var(--c-white);
+  border: 1px solid var(--c-white-text);
 }
 .toggleDark {
   background-color: var(--c-gray-l);
@@ -100,9 +188,9 @@
   height: 21px;
   background-color: var(--c-accent);
   border-radius: 10px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .toggleCircleOn {
   transform: translateX(35px);
+  background-color: var(--c-white);
 }
-

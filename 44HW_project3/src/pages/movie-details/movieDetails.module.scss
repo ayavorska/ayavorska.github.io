@@ -1,62 +1,101 @@
 @import "../../scss/themes/index";
+@import "../../scss/core/index";
 
 .movieDetails {
-    background-color: var(--c-main-bg);
+  background-color: var(--c-main-bg);
+  position: relative;
 }
 .movieDetailsBgImg {
-    filter: blur(5px);
-    min-height: 100vh;
-    height: 100%;
-    position: relative;
+  position: fixed;
+  top: 0;
+  left: -8px;
+  z-index: -1;
+  filter: blur(5px);
+  min-height: 101vh;
+  height: 100%;
+  min-width: 102vw;
+  width: 100%;
+}
+.movieDetailsBody {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
 }
 .movieDetailsInner {
-    position: absolute;
-    top: 150px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    max-width: 1190px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+  width: 100%;
+  @include breakpoint("xl") {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .contentSection {
-    width: 50%;
+  width: 50%;
+  @include breakpoint("xl") {
+    width: 70%;
+  }
+  @include breakpoint("md") {
+    width: 90%;
+  }
+  @include breakpoint("sm") {
+    width: 100%;
+  }
 }
 .flex_gap {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .contentSectionBg {
-    background-color: #18181a9f;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: var(--c-movie-bg);
+  padding: 20px;
+  border-radius: 10px;
 }
 .posterImg {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 .movieTitle {
-    font-size: $fs-28;
-    font-weight: 600;
-    margin-bottom: 15px;
+  font-size: $fs-28;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--c-white-text);
+  @include breakpoint("lg") {
+    text-align: center;
+  }
 }
 .movieInfo {
-    display: flex;
-    gap: 10px;
-    font-size: $fs-14;
-    margin-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  font-size: $fs-14;
+  margin-bottom: 40px;
+  color: var(--c-white-text);
+  @include breakpoint("lg") {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 }
 .bg_orange {
-    background-color: var(--c-accent);
-    border-radius: 10px;
-    padding: 0 10px;
+  background-color: var(--c-accent);
+  border-radius: 10px;
+  padding: 0 10px;
 }
 .movieTagline {
-    font-style: italic;
-    font-weight: 400;
-    font-size: $fs-16;
-    margin-bottom: 10px;
+  color: var(--c-white-text);
+  font-style: italic;
+  font-weight: 400;
+  font-size: $fs-16;
+  margin-bottom: 10px;
+  @include breakpoint("lg") {
+    text-align: center;
+  }
+}
+.movieOverview {
+  color: var(--c-white-text);
+  @include breakpoint("lg") {
+    text-align: justify;
+  }
 }

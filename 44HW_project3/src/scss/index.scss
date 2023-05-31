@@ -1,5 +1,5 @@
-// reset
 @import "./themes/index";
+@import "./core/index";
 
 *,
 *:before,
@@ -13,8 +13,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: $fs-18;
   font-weight: 500;
-  color: var(--c-white);
+  color: var(--c-main-bg);
   line-height: 24px;
+  padding-top: 83px;
+  @include breakpoint("sm") {
+    padding-top: 63px;
+  }
 }
 h1,
 h2,
@@ -39,5 +43,28 @@ a {
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
-}
+  @include breakpoint() {
+    max-width: $breakpoint-xl;
+  }
 
+  @include breakpoint("xl") {
+    max-width: $breakpoint-lg;
+  }
+
+  @include breakpoint("lg") {
+    max-width: $breakpoint-md;
+  }
+
+  @include breakpoint("md") {
+    max-width: $breakpoint-sm;
+  }
+
+  @include breakpoint("sm") {
+    max-width: $breakpoint-xs;
+  }
+
+  @include breakpoint("xs") {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}

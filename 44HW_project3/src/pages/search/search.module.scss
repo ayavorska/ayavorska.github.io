@@ -1,24 +1,38 @@
 @import "../../scss/themes/index";
+@import "../../scss/core/index";
 
 .search {
-    background-color: var(--c-main-bg);
-    min-height: calc(100vh - 84px);
-    padding: 50px 0;
+  background-color: var(--c-main-bg);
+  min-height: calc(100vh - 84px);
+  padding: 50px 0;
 }
 .searchInner {
-    background-color: var(--c-card-bg);
-    padding: 40px;
-    border-radius: 10px;
+  background-color: var(--c-card-bg);
+  padding: 40px;
+  border-radius: 10px;
 }
 .mainTitle {
-    margin-bottom: 40px;
-    font-size: $fs-28;
+  margin-bottom: 40px;
+  font-size: $fs-28;
+  @include breakpoint("sm") {
+    font-size: $fs-22;
+    margin-bottom: 30px;
+  }
 }
 .searchBody {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    column-gap: 20px;
-    row-gap: 30px;
-    grid-template-rows: auto;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-rows: auto;
+  justify-items: center;
+  @include breakpoint("xl") {
+    grid-template-columns: repeat(3, auto);
+  }
+  @include breakpoint("lg") {
+    grid-template-columns: repeat(2, auto);
+  }
+  @include breakpoint("sm") {
+    grid-template-columns: repeat(1, auto);
+  }
 }

@@ -1,10 +1,17 @@
 @import "../../../../scss/themes/index";
+@import "../../../../scss/core/index";
 
 .trendingMovies {
   margin-bottom: 40px;
+  @include breakpoint("sm") {
+    margin-bottom: 20px;
+  }
 }
 .trendingMoviesInner {
   background-color: var(--c-card-bg);
   padding: 40px;
   border-radius: 10px;
+  @include breakpoint("sm") {
+    padding: 12px;
+  }
 }

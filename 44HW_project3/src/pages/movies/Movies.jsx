@@ -61,7 +61,7 @@ export default function Movies() {
             >
               <legend className={styles.formTitle}>Filter</legend>
               <div className={styles.formRow}>
-                <label htmlFor="year">Year:</label>
+                <label className={styles.formLabel} htmlFor="year">Year:</label>
                 <input
                   className={styles.formInput}
                   id="year"
@@ -71,7 +71,7 @@ export default function Movies() {
               </div>
 
               <div className={styles.formRow}>
-                <label htmlFor="genres" className={styles.searchInner}>
+                <label htmlFor="genres" className={styles.formLabel}>
                   Genres:
                 </label>
 
@@ -113,7 +113,7 @@ export default function Movies() {
               <div className={styles.formRow}>
                 <div className={styles.formCol}>
                   <div className={styles.formVoteAver}>
-                    <label htmlFor="voteAverageGte">Vote(min):</label>
+                    <label className={styles.formLabel} htmlFor="voteAverageGte">Vote(min):</label>
                     <input
                       className={styles.formInput}
                       type="number"
@@ -123,8 +123,8 @@ export default function Movies() {
                     />
                   </div>
                   <div className={styles.formVoteAver}>
-                    <label htmlFor="voteAverageLte">Vote(max):</label>
-                    <input
+                    <label className={styles.formLabel} htmlFor="voteAverageLte">Vote(max):</label>
+                    <input 
                       className={styles.formInput}
                       type="number"
                       {...register("voteAverageLte")}

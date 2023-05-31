@@ -1,7 +1,11 @@
 @import "../../scss/themes/index";
+@import "../../scss/core/index";
 
 .home {
     background-color: var(--c-main-bg);
     padding: 50px 0;
-
+    @include breakpoint("sm") {
+        padding: 20px 0;
+    
+      }
 }

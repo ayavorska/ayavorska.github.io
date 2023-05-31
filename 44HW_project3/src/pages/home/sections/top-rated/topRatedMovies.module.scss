@@ -1,7 +1,11 @@
 @import "../../../../scss/themes/index";
+@import "../../../../scss/core/index";
 
 .topRatedMoviesInner {
-    background-color: var(--c-card-bg);
-    padding: 40px;
-    border-radius: 10px;
+  background-color: var(--c-card-bg);
+  padding: 40px;
+  border-radius: 10px;
+  @include breakpoint("sm") {
+    padding: 12px;
+  }
 }
