@@ -29,7 +29,7 @@ export default function TopRatedMovies() {
     <section className={styles.topRatedMovies}>
       <div className="container">
         <div className={styles.topRatedMoviesInner}>
-          <p href="#" className={`${styles.topRatedMoviesTitle} ${styles.mainTitle}`}>
+          <p className={`${styles.topRatedMoviesTitle} ${styles.mainTitle}`}>
             Top rated:
           </p>
           {isLoading && <Loader />}

@@ -30,7 +30,6 @@ export default function NowPlayingMovies() {
       <div className="container">
         <div className={styles.nowPlayingMoviesInner}>
           <p
-            href="#"
             className={`${styles.nowPlayingMoviesTitle} ${styles.mainTitle}`}
           >
             Now playing:

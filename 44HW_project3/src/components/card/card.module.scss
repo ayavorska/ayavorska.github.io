@@ -14,11 +14,11 @@
 
 .cardTitleLink {
   display: block;
-  color: $c-white;
+  color: var(--c-white);
   transition: all 0.4s;
   margin-bottom: 8px;
   &:hover {
-    color: $c-orange;
+    color: var(--c-accent);
   }
 }
 .cardTitle {
@@ -34,12 +34,12 @@
 }
 .cardContent,
 .cardGenre {
-  color: $c-main-text;
+  color: var(--c-main-text);
   font-size: $fs-14;
 }
 .cardAverage {
   border-radius: 5px;
   padding: 0 4px;
-  background-color: $c-orange;
-  color: $c-gray-m;
+  background-color: var(--c-accent);
+  color: var(--c-card-bg);
 }

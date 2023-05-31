@@ -1,12 +1,12 @@
 @import "../../scss/themes/index";
 
 .search {
-    background-color: $c-gray-d;
+    background-color: var(--c-main-bg);
     min-height: calc(100vh - 84px);
     padding: 50px 0;
 }
 .searchInner {
-    background-color: $c-gray-m;
+    background-color: var(--c-card-bg);
     padding: 40px;
     border-radius: 10px;
 }

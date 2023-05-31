@@ -13,7 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: $fs-18;
   font-weight: 500;
-  color: $c-white;
+  color: var(--c-white);
   line-height: 24px;
 }
 h1,

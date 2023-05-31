@@ -1,7 +1,7 @@
 @import "../../scss/themes/index";
 
 .home {
-    background-color: $c-gray-d;
+    background-color: var(--c-main-bg);
     padding: 50px 0;
 
 }

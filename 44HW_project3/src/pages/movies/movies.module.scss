@@ -1,0 +1,151 @@
+@import "../../scss/themes/index";
+
+.movies {
+  background-color: var(--c-main-bg);
+  min-height: calc(100vh - 84px);
+  padding: 50px 0;
+}
+.moviesInner {
+  display: flex;
+  gap: 20px;
+}
+.moviesSidebar {
+  max-width: 350px;
+  width: 100%;
+  height: 500px;
+  background-color: var(--c-card-bg);
+  padding: 40px;
+  border-radius: 10px;
+}
+.moviesContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+// filter form
+
+.movieFilterForm {
+}
+.formTitle {
+  font-size: $fs-22;
+  font-family: "Wix Madefor Display", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.formRow {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formCol {
+  display: flex;
+  gap: 20px;
+}
+.formVoteAver {
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formInput {
+  padding: 12px 16px;
+  border: 1px solid var(--c-white);
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+    box-shadow: 0px 0px 17px -2px var(--c-accent);
+  }
+  &::placeholder {
+    font-size: $fs-14;
+    color: var(--c-accent);
+  }
+}
+
+.listboxBody {
+  position: relative;
+  min-height: 41px;
+  padding: 0 8px;
+  border: 1px solid var(--c-white);
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--c-white);
+  color: var(--c-main-bg);
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.formListboxBtn {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--c-white);
+  color: var(--c-accent);
+  font-size: $fs-14;
+  min-height: 41px;
+  padding: 0 8px;
+  border: none;
+  text-align: left;
+  font-family: "Wix Madefor Display", sans-serif;
+  :focus {
+    outline: none;
+  }
+}
+.formListboxOptions {
+  position: absolute;
+  left: 0;
+  margin-top: 4px;
+  max-height: 240px;
+  padding: 4px;
+  width: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: var(--c-white);
+}
+.formListboxOption {
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    color: var(--c-accent);
+  }
+}
+.formListboxOptionActive {
+  color: var(--c-accent);
+}
+
+.formBtn {
+  padding: 12px 16px;
+  border: 1px solid var(--c-white);
+  background-color: var(--c-white);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: $fs-14;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.4s;
+  margin-right: 20px;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: var(--c-accent);
+  }
+}
+.formBtnRes {
+  font-family: "Roboto", sans-serif;
+  font-size: $fs-12;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  color: var(--c-main-text);
+  transition: all 0.4s;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: var(--c-accent);
+  }
+}

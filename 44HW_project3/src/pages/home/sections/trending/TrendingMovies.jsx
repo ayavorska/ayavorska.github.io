@@ -29,7 +29,7 @@ export default function TrendingMovies() {
     <section className={styles.trendingMovies}>
       <div className="container">
         <div className={styles.trendingMoviesInner}>
-          <p href="#" className={`${styles.trendingMoviesTitle} ${styles.mainTitle}`}>
+          <p className={`${styles.trendingMoviesTitle} ${styles.mainTitle}`}>
             Trending:
           </p>
           {isLoading && <Loader />}

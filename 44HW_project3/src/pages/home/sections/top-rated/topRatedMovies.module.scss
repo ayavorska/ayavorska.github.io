@@ -1,7 +1,7 @@
 @import "../../../../scss/themes/index";
 
 .topRatedMoviesInner {
-    background-color: $c-gray-m;
+    background-color: var(--c-card-bg);
     padding: 40px;
     border-radius: 10px;
 }

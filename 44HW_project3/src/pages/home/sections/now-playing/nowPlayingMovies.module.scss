@@ -4,7 +4,7 @@
   margin-bottom: 40px;
 }
 .nowPlayingMoviesInner {
-  background-color: $c-gray-m;
+  background-color: var(--c-card-bg);
   padding: 40px;
   border-radius: 10px;
 }

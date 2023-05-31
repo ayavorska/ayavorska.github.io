@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams, NavLink } from "react-router-dom";
 
 import styles from "./header.module.scss";
 
@@ -31,36 +31,45 @@ export function Header() {
       <div className="container">
         <div className={styles.headerInner}>
           <Link className={styles.headerLogo} to="/" onClick={handleNavigate}>
-            Movie search
+            Movies search
           </Link>
+          <NavLink
+            to="/movies"
+            className={({ isActive }) =>
+              `${isActive ? "active" : ""} ${styles.headerLink}`
+            }
+            onClick={handleNavigate}
+          >
+            Movies
+          </NavLink>
 
           <div className={styles.headerRightSide}>
-          <Switch
-            checked={enabled}
-            onChange={setEnabled}
-            className={`${
-              enabled ? styles.toggleDark : styles.toggleLight
-            } ${styles.toggle}`}
-          >
-            <span
-              className={`${
-                enabled ? styles.toggleCircleOn : styles.toggleCircleOff
-              } ${styles.toggleCircle}`}
-            />
-          </Switch>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <input
-              id="title"
-              className={styles.headerInput}
-              type="text"
-              placeholder="Search for a movie.."
-              {...register("title")}
-            />
+            <Switch
+              checked={enabled}
+              onChange={setEnabled}
+              className={`${enabled ? styles.toggleDark : styles.toggleLight} ${
+                styles.toggle
+              }`}
+            >
+              <span
+                className={`${
+                  enabled ? styles.toggleCircleOn : styles.toggleCircleOff
+                } ${styles.toggleCircle}`}
+              />
+            </Switch>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <input
+                id="title"
+                className={styles.headerInput}
+                type="text"
+                placeholder="Search for a movie.."
+                {...register("title")}
+              />
 
-            <button type="submit" className={styles.headerBtn}>
-              Show results
-            </button>
-          </form>
+              <button type="submit" className={styles.headerBtn}>
+                Show results
+              </button>
+            </form>
           </div>
         </div>
       </div>

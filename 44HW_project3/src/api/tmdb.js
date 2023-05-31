@@ -150,6 +150,41 @@ export async function getMovieRecommendations({ movieId }) {
     console.error(err);
   }
 }
+export async function getMovies({
+  year,
+  genres,
+  voteAverageGte,
+  voteAverageLte,
+}) {
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${API_KEY}`,
+    },
+  };
+  const params = new URLSearchParams(
+    Object.fromEntries(
+      Object.entries({
+        language: "en",
+        year: year,
+        with_genres: genres?.map(genre => genre.id).join(','),
+        "vote_average.gte": voteAverageGte,
+        "vote_average.lte": voteAverageLte,
+      }).filter(([, value]) => !!value)
+    )
+  );
+  try {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/discover/movie?${params}`,
+      options
+    );
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 export async function getGenres() {
   const options = {
