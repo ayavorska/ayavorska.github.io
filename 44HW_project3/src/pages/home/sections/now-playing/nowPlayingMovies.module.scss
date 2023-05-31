@@ -13,6 +13,7 @@
   padding: 40px;
   border-radius: 10px;
   @include breakpoint("sm") {
+    min-height: 700px;
     padding: 12px;
 
   }

@@ -27,7 +27,6 @@ export default function TopRatedMovies() {
 
   return (
     <section className={styles.topRatedMovies}>
-      <div className="container">
         <div className={styles.topRatedMoviesInner}>
           <p className={`${styles.topRatedMoviesTitle} ${styles.mainTitle}`}>
             Top rated:
@@ -70,7 +69,6 @@ export default function TopRatedMovies() {
             ))}
           </Swiper>
         </div>
-      </div>
     </section>
   );
 }

@@ -27,7 +27,6 @@ export default function NowPlayingMovies() {
 
   return (
     <section className={styles.nowPlayingMovies}>
-      <div className="container">
         <div className={styles.nowPlayingMoviesInner}>
           <p
             className={`${styles.nowPlayingMoviesTitle} ${styles.mainTitle}`}
@@ -72,7 +71,6 @@ export default function NowPlayingMovies() {
             ))}
           </Swiper>
         </div>
-      </div>
     </section>
   );
 }

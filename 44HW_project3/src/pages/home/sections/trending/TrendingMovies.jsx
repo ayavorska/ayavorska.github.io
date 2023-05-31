@@ -27,7 +27,6 @@ export default function TrendingMovies() {
 
   return (
     <section className={styles.trendingMovies}>
-      <div className="container">
         <div className={styles.trendingMoviesInner}>
           <p className={`${styles.trendingMoviesTitle} ${styles.mainTitle}`}>
             Trending:
@@ -70,7 +69,6 @@ export default function TrendingMovies() {
             ))}
           </Swiper>
         </div>
-      </div>
     </section>
   );
 }
