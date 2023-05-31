@@ -12,7 +12,7 @@
   background-color: var(--c-card-bg);
   padding: 40px;
   border-radius: 10px;
-  min-height: 300px;
+  min-height: 450px;
   @include breakpoint("sm") {
     min-height: 700px;
     padding: 12px;
